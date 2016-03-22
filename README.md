@@ -4,7 +4,9 @@ A repository for drafting a report regarding "Maximizing Science in the Era of L
 ## Current Goal, for March 28
 
 For each science area, we should:
+
 1) Describe the science need in a few sentences at most
+
 2) Describe the needed capability (or capabilities) in enough detail
 that someone could determine whether they overlap with other needs.
 (E.g.:  “medium-resolution (R~4000-6000) spectroscopy covering the
