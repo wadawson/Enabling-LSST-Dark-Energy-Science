@@ -1,6 +1,21 @@
 # Enabling-LSST-Dark-Energy-Science
 A repository for drafting a report regarding "Maximizing Science in the Era of LSST: A Community-based Study of Needed US OIR Capabilities", with a particular focus on enabling LSST studies of dark energy.
 
+## Current Goal, for March 28
+
+For each science area, we should:
+1) Describe the science need in a few sentences at most
+2) Describe the needed capability (or capabilities) in enough detail
+that someone could determine whether they overlap with other needs.
+(E.g.:  “medium-resolution (R~4000-6000) spectroscopy covering the
+full optical window for i<25.3 objects with multiplexing of ~1000 over
+~10 arcminute diameter fields” could work, or for a differentcase
+“optical medium-resolution spectroscopy with a highly-multiplexed
+spectrograph with a many-degree FoV on a 4m telescope” would also give
+enough information to allow identification of common needs).
+
+
+
 ## TimeLine
 
 ### Mar 28
