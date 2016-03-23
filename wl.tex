@@ -1,6 +1,6 @@
 \section{Weak lensing}
 
-{\em Draft notes from Rachel, to be reviewed by Will and iterated on before the rest of the group
+{\em Draft notes from Rachel, to be reviewed by Will, iterated on, and condensed before the rest of the group
   takes them too seriously.}
 
 \subsection{Galaxy morphologies}
@@ -38,3 +38,40 @@ itself or from HST.
 
 \subsection{Intrinsic alignments}
 
+Intrinsic alignments (IA) of galaxy shapes with the cosmic web are a contaminant to weak lensing
+measurements, since WL measurements assume that all coherent alignments are due to lensing. IA have
+been robustly detected out to hundred Mpc scales, making them a serious theoretical uncertainty for
+WL cosmology.  ({\em Should probably elaborate slightly about density-shape and shape-shape
+  correlations, and how the former cannot be removed by just omitting nearby pairs.  But I am lazy
+  and will fill this in later.}) Several methods have been developed for mitigating this systematic,
+including nulling (which loses a lot of cosmological information and leads to stringent constraints
+on photo-$z$ errors), forward modeling (which uses galaxy clustering, galaxy-shear, and shear-shear
+correlations measurements, and involves marginalizing over a model for how the alignments enter
+those measurements), and self-calibration (which does not require an {\em a priori} alignments
+model, but has certain assumptions that have not yet been validated in realistic measurements).
+
+Current data, primarily from the SDSS, provide us a template for how intrinsic alignments scale with
+galaxy type, luminosity, and redshift for $z\lesssim 0.5$.  However, we need this information for
+galaxies at higher redshifts, and we need better constraints on the alignments of blue galaxies, in
+order to place reasonable priors when carrying out the WL analysis with LSST. Generally, this
+requires both good imaging and redshift information, in order to better localize the galaxy pairs in
+3D.
+
+Question: why not use LSST itself?  Will the lSST data itself (despite photo-$z$ errors) ultimately
+be the most informative dataset about IA, and perhaps we don't need strong external priors?  I think
+the answer to this is that since IA are degenerate with other things (photo-$z$ errors and certain
+shear systematics) it is still valuable to have {\em external} priors so this doesn't become a
+limiting uncertainty for LSST WL.
+
+Question: what type of data do we need for this?  In principle, we need a spectroscopic dataset that
+covers decent-sized contiguous areas (so as to constrain alignments to tens of Mpc) but also has a
+decent sampling rate within these fields (to beat down shape noise).  This seems somewhat orthogonal
+to a ``many small fields to beat down cosmic variance'' approach that one might want for
+spectroscopic observations to constrain photo-$z$ errors, but perhaps a compromise could be
+reached.  {\em We need to make a strawman for area, sampling rate, and selection - what kinds of
+  galaxies we care about.}
+
+Question: can we use cross-correlations?  Perhaps we could use a more sparse sampling of the density
+field over a wider area, and constrain IA using cross-correlations with the spectroscopic galaxies
+instead of the auto-correlations of them (using a method like that from Blazek et al 2012 or Chisari
+et al 2014).  {\em How to define the needed dataset for this?  Have to think about it.}
