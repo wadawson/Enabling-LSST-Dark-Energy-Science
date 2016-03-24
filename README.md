@@ -1,5 +1,11 @@
-# Enabling-LSST-Dark-Energy-Science
+# Enabling LSST Dark Energy Science
+
 A repository for drafting a report regarding "Maximizing Science in the Era of LSST: A Community-based Study of Needed US OIR Capabilities", with a particular focus on enabling LSST studies of dark energy.
+
+To compile the PDF:
+```
+pdflatex maximizing_science_dark_energy.tex
+```
 
 ## Current Goal, for March 28
 
@@ -16,24 +22,26 @@ full optical window for i<25.3 objects with multiplexing of ~1000 over
 spectrograph with a many-degree FoV on a 4m telescope” would also give
 enough information to allow identification of common needs).
 
-
+----
 
 ## TimeLine
 
-### Mar 28
+#### March 28
 Study leads circulate a brief summary of what science motivates what capabilities.
 Capabilities described in enough detail for other groups to understand overlap.
 
-### April 18
+#### April 18
 Study leads circulate brief "whitepapers" describing the science in greater detail and
 quantifying the capabilities. Similar to a rough draft of an NOAO observing proposal.
 It has the same elements of compelling science, technical description and quantitative
 statement of resource needs. But does not have to be very polished.
 
-### May 2-4 Workshop
+#### May 2-4 Workshop
 Feedback from workshop used to refine white papers.
 Synthesis of needed capabilities, their prioritization, and roadmap of "how to get there"
 i.e., what exists and what investments needed.
+
+----
 
 ## Resources
 March 28 is coming up quickly, but then again, this has been studied repeatedly for dark energy use cases.  Some resources we can use are:
