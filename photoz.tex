@@ -3,8 +3,22 @@
 \section{Photo-z}
 \label{sec:photoz}
 
-{\em A) Photo-z training and calibration (including in cluster regime,
-spectroscopy of blends identified in space-based imaging).}
+\subsection{Photometric redshift training and calibration}
+
+LSST photometric redshifts will be dependent upon large spectroscopic samples with highly-secure redshift measurements for two purposes: 
+
+$\bullet$ {\it training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors; and 
+
+$\bullet$ {\it calibration}, the determination of the actual bias and scatter in redshifts produced by a given algorithm (for most purposes, this reduces to the problem of determining the actual redshift distribution for samples selected based on some set of properties).  
+
+Different datasets will be needed for each of these purposes.
+
+For training, we will require spectroscopy of at least 20,000 galaxies over at least 15 fields each with diameter of at least 20 arcmin, spanning the full magnitude range of LSST weak lensing samples ($i<25.3$); cf. Newman et al. 2015.  A smaller sample of galaxies in clusters would also enable tests of whether photometric redshift training is accurate in this regime.  Because of the need for high redshift efficiency and robust redshift determinations, as well as the large sample sizes required with long exposure times necessary, an OIR spectrograph coveraging the full optical window with sufficient resolution to split the [OII] 3727 doublet, with large multiplexing ($>\sim 1500$) and field of view ($>\sim 20$ arcmin diameter), on as large a telescope as feasible, will be needed.  
+
+For calibration, we expect to use the cross-correlation method; this will require spectroscopy of at least 100,000 objects over multiple independent fields at least 100 deg$^2$ in area each, spanning the full {\em redshift} (but not necessarily {\em magnitude}) range of LSST samples.  DESI samples should exceed this requirement (with $\sim 4000$ deg$^2$ of expected overlap), but it is possible that photometric redshift systematics will be different in this higher-declination (and hence higher-airmass) portion of the LSST footprint.   A DESI-like spectrograph (with wide field of view, $\sim 5000\times$ multiplexing, full optical coverage, sufficient resolution to split [OII], and a ~4m diameter telescope aperture) in the Southern hemisphere would enable ideal calibration via cross-correlations.  
+
+%{\em A) Photo-z training and calibration (including in cluster regime,
+%spectroscopy of blends identified in space-based imaging).}
 
 % For each science area, we should:
 %
@@ -23,17 +37,17 @@ spectroscopy of blends identified in space-based imaging).}
 
 \subsection{Ambiguous Blending}
 Approximately 14\% of the objects detected in the LSST survey will be ambiguous
-blends of two or more galaxies (Dawson et al. 2016), that is galaxies with
-separations $\lesssim$ the PSF width that fail to be identified as blended and
-are detected as a single object. These ambiguous blends pose a challenge and
-potential source of systematic for photometric redshift algorithms operating
+blends of two or more galaxies (Dawson et al. 2016); that is, galaxies with
+separations $\lesssim$ their FWHM, such that they cannot reliably be identified as blended and are detected as a single object. These ambiguous blends pose a challenge and
+potential source of systematics for photometric redshift algorithms operating
 under the assumption of a single isolated galaxy (currently all photo-z
-algorithms). By definition these ambiguous blends will go undetected so it seems
-that the best strategy is calibration. In this regard it seems like the best
-strategy is to use overlapping space-based imaging in both the field and cluster
+algorithms). By definition these ambiguous blends will go undetected, so it is likely that the best strategy for mitigation will be calibration of the effects.  One option  is to use overlapping space-based imaging in both the field and cluster
 environments to identify a sample of ambiguous blends and observe these galaxies
-with a medium resolution spectrograph. Since resolution in the redshift
-dimension is all that is needed for such a study, a simple slit-based
-spectrograph (with the slit properly positioned), and potentially a fiber-based
-(assuming the fiber encompasses both/all galaxies), will be sufficient and with
-multiplexing will be more efficient than an AO IFU.
+with a high-multiplexing, medium resolution spectrograph with large enough slits or fiber heads to encompass both components of a blend.
+
+{\em Note: ultimately, would need some estimate of sample size.  I'll admit that I'm not convinced a spectroscopic campaign focused on blends would be very efficient nor provide a better way of characterizing the effect than predicting it from clustering measurements + redshift distributions + space-based imaging (since the key question is what fractions of blends are same-redshift vs. different-z). --JAN}
+% Since resolution in the redshift
+%dimension is all that is needed for such a study, a simple slit-based
+%spectrograph (with the slit properly positioned), and potentially a fiber-based
+%(assuming the fiber encompasses both/all galaxies), will be sufficient and with
+%multiplexing will be more efficient than an AO IFU.
