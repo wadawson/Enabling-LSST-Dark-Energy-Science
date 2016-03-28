@@ -2,54 +2,14 @@
 \label{sec:wl}
 
 {\it B) Weak lensing: Intrinsic alignment studies, exquisite-seeing data
-for morphology templates, etc. Draft notes from Rachel, to be reviewed
-by Will, iterated on, and condensed before the rest of the group takes
-them too seriously.}
+for morphology templates, etc.}
 
 \subsection{Galaxy morphologies}
 
-All existing methods of inferring weak lensing shear depend in some way on knowledge of (at minimum)
-the galaxy intrinsic ellipticity distribution, and in many cases they also depend on the
-distribution of higher-order moments of galaxies as well.  Do we require additional observations
-from US OIR facilities to obtain that information for LSST?  I (RM) had raised this question on the
-telecon, but here are my current thoughts now that I consider the question in more detail.  I think
-the answer depends on the method of shear inference:
-
-\begin{itemize}
-\item Regular old ``measure shapes and average to infer ensemble shear'' methods: these typically
-  have implicit assumptions about the distributions of galaxy morphologies and ellipticities, which
-  should be calibrated out using simulated data that has a realistic distribution of all those
-  things.  Existing efforts to do this rely on HST data.  I would argue that we need more HST data
-  to avoid being cosmic variance dominated for the very faintest galaxies (currently only observed
-  in UDF), but that is outside the scope of this committee's efforts.  Alternatively, I think that
-  the best-seeing subset of LSST data may provide some information on this, and it's unlikely that
-  observations with some other telecope could provide a comparable volume of high-quality data.
-\item Bayesian Fourier approaches (Bernstein \& Armstrong): this approach requires a deep (high
-  $S/N$) dataset to place priors on the distributions of galaxy moments.  Their proposal is to use a
-  deep subset of the same dataset used for the science; in the LSST context, this would mean using
-  the DDFs.  No external data needed.
-\item Hierarchical inference (Schneider et al.): A prior on the intrinsic ellipticity distribution
-  has to come from somewhere.  Presumably the source could be the same as for (1), not requiring
-  additional US OIR facilities outside of LSST.  It's not clear how information about detailed
-  morphologies would go into this approach, but perhaps at the stage of testing calibration using
-  simulations.  In this case the needs are similar to those of (1) as well.
-\item Tulley-Fischer (Huff et al.~2013): This method more than the others would
-  benefit from US OIR capabilities beyond LSST and space-based observatories
-  (e.g., HST, WFIRST). This method requires slit or IFU spectroscopy of galaxies
-  in order to determine their rotations and place them on the Tulley-Fischer
-  relation which can greatly reduce the intrinsic ellipticity uncertainty (a
-  dominant source of weak lensing noise). I (wd) haven't kept up with this
-  method and I am not sure if it has been developed since 2013, last I heard
-  they had been awarded Keck DEIMOS time to test the method. This method has
-  been presented as competitive with LSST but I am not sure how complementary
-  it is.
-\end{itemize}
-
-Tentative conclusion: our report doesn't have to say anything about calibrations of galaxy
-morphology and ellipticity distributions, because we will get what we need either from LSST data
-itself or from HST. I (wd) am also leaning towards this conclusion, however I would
-like to do a little more homework on the latest status of the Tulley-Fischer
-method and potential complementarity with LSST.
+After some discussion, we conclude that our report doesn't have to say anything about calibrations
+of galaxy morphology and ellipticity distributions, because we will get what we need either from
+LSST data itself or from HST.  (For longer discussion of why this is the case, see the version of
+this document in commit b29e99f64e6633218f3316092b6d6fdb38f6d209.)
 
 \subsection{Intrinsic alignments}
 
