@@ -1,0 +1,29 @@
+
+LSST will generate very large galaxy samples that can be used for
+investigations of the galaxy distribution -- e.g. correlation
+functions, luminosity functions, dependence on environment -- that are
+much more sensitive than what we are used to. These will enable
+measurement of features and evolution at high precision. At the same
+time, these samples will largely rely on photometric redshifts. To
+take full advantage, and to avoid introducing subtle systematics,
+astronomers will have to develop methods that use the full information
+in the photo-z P(z) estimate, rather than using point estimates
+(placing galaxies at their best estimate redshift).
+
+This will require developing techniques for probabilistic inference
+over photo-z probability distributions, when measuring typical
+population estimates such as the luminosity function or correlation
+function. It will generally not be practical to forward-model the
+entire dataset (e.g. constraining the luminosity function directly
+from galaxy apparent magnitudes, in principle would require modeling
+the LF and colors of all galaxies at all redshifts). So investigators
+will use photo-z probability distributions calculated either by the
+LSST pipeline or their own.  Generalizing the standard measurements to
+use the information in the P(z) distribution and to be robust against
+errors in estimating P(z) is a relatively unexplored area. Simple
+ideas such as randomly sampling from each galaxy's P(z) can give wrong
+answers (because this magnifies photo-z spread rather than
+compensating for it). Exploiting the LSST dataset will require
+supporting research into methods for inference using photo-zs and
+supporting the community in developing and releasing publicly
+available code and tools.
