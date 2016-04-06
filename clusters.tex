@@ -1,0 +1,122 @@
+% ======================================================================
+
+\section{Galaxy Clusters}
+\label{sec:clusters}
+{\it Anja von der Linden, Will Dawson and others}
+
+
+Cosmology with the Cluster Mass Function will be a statistically very powerful technique in the LSST era, with samples of tens to hundreds of thousands of clusters over a wide range in redshift.  Harnessing this statistical power requires a detailed understanding of all the systematic uncertainties involved.  The by far dominant sources of systematic uncertainties relate to the understanding of the relation between the survey observables: cluster richness for LSST-based cluster finders, but also the Sunyaev-Zeldovich signal used in mm-based cluster samples available in the LSST era (e.g. AdvACT, SPT-3G, CMB-S4), as well as X-ray flux from X-ray selected cluster samples (eROSITA).  LSST is uniquely positioned to address the calibration of mass-observable relations due to its weak-lensing and photo-z capabilitites, which can be used for an accurate and precise calibration of cluster masses (DESC 2012, 2015).  The needs for cluster cosmology in terms of additional ground-based OIR data are therefore intricately linked with those of weak lensing and photometric redshifts.  The largest effort we foresee that is primarily driven by cluster cosmology is the calibration of photometric redshifts as function of environment.
+
+
+% ----------------------------------------------------------------------
+
+\subsection{Photometric Redshifts in Cluster Fields}
+
+Photo-z's in cluster fields need to perform two functions: measure the cluster redshift, and cleanly separate background galaxies to be used in the weak-lensing measurements from cluster and foreground galaxies.  The latter presents the largest empirical uncertainty on weak-lensing cluster mass estimates, and is thus the primary driver for ancillary datasets for cluster count cosmology with LSST. 
+
+\begin{itemize}
+\item {\it Photo-z calibration in cluster fields:} Since the shear induced on a background galaxy is a function of the galaxy redshift, the photo-z's of galaxies in cluster fields need to be accurately known.  It has been shown that while the use of simple one-point estimators leads to significantly biased results, using the full photo-z redshift probability distribution $p(z)$ yields nearly unbiased mass measurements (Applegate et al. 2014).  In addition to general requirements on $p(z)$ distributions (Sect. ?), the distributions need to accurately reflect the probability of a given galaxy to be in the cluster.  This can be achieved e.g. by adding peaks at the cluster redshift into the $p(z)$ priors; the normalization of such peaks then needs to be calibrated, ideally on spectroscopic training sets. {\it AvdL comment: need to figure out prospects for cross-correlation methods for clusters}
+\end{itemize}
+
+
+In terms of determining cluster redshifts, techniques based on red-sequence galaxies have been shown to perform exceptionally well at least to at least $z\le0.8$ (Rykoff et al. 2016), and are expected to yield reliable redshifts to $z\le1.2$ with LSST. 
+\begin{itemize}
+\item {\it Cluster redshifts at $z\ge1.1$:} Red-sequence-based methods recover accurate cluster redshifts if the red sequence is (1) already well-established, and (2) falls within two bands used in the survey. At higher redshifts, neither of these is necessarily the case.  Yet, the high-redshift clusters are particularly valuable for probing dark energy.  NIR imaging, as well as follow-up spectroscopy, can significantly improve the cluster redshift estimates in this regime.  Gathering such datasets can be done already before completion of LSST by targeting SZ-selected cluster samples.  {\it AvdL comment: Euclid and WFIRST can probably do a lot of this?})
+\end{itemize}
+
+
+\subsection{Cluster density profiles}
+
+Clusters with multiple mass probes covering a range in radial range can be used to reconstruct the cluster density profiles, which serves as a validation of the density profiles assumed in the weak-lensing mass measurements, and could be used to test the properties of dark matter, if the astrophysical processes at cluster cores can also be understood (Peter et al. 2013).  In addition to the LSST weak-lensing measurements, which best constrain cluster masses on $\sim1$~Mpc scales, such datasets should include BCG velocity dispersion profiles, spectroscopic redshifts of any strongly lensed multiple image systems, and relatively deep X-ray imaging. In terms of OIR capabilities, this translates to deep long-slit BCG spectra, as well as dedicated efforts to follow-up cluster strong lensing features with optical/NIR multi-object spectroscopy.  {\it AvdL comment: The best candidate clusters will probably all well known before LSST 3-year?}
+
+\subsection{Modified gravity}
+
+The combination of weak lensing and dynamical mass probes (e.g. cluster galaxy velocities) can be used to test modified gravity theories.  {\it AvdL comment: there are many version of this: redshift-space distortions, stacked measurements, etc.  How many redshifts per cluster do we actually need?}
+
+---------------------------------
+
+{\it Note from Anja:  Will suggested that strong lensing and/or galaxy velocities can help improve the cluster mass calibration for cluster count cosmology over the default plan of using weak-lensing.  For cluster counts, I remain skeptical on both accounts. Strong lensing is awesome and gives us very precise mass constraints in cluster cores ($\sim 100$~kpc), but requires significant extrapolation to measure masses on the scales of $R_{500} - R_{200}$ ($\sim 1$~Mpc).  Moreover, there is a selection bias towards clusters that are over-concentrated or aligned along the line-of-sight.  While there is simulation work to account for such biases (e.g. Meneghetti et al.), the small scales that strong lensing probes require a thorough understanding of the gas physics at cluster cores, too, which still seems a daunting task.  I DO think strong lensing has a place in precise measurements of cluster density profiles in selected clusters, which is (1) informative for the weak-lensing work, and (2) can be used to probe the processes at cluster cores (both dark matter and cluster astrophysics, see work by Annika Peter).  Regarding the caustic method, I have only seen one blind test done on simulations (Old et al. 2014, 2015), in which it did not perform particularly well.  Those works showed that in general, velocity-based methods suffer even larger biases and scatters than weak-lensing masses.  I'm willing to believe that things look better if one has several hundreds of velocities per cluster, but that would be a significant investment of telescope time just to be comparable to the weak-lensing constraints.  I actually think that modified gravity is a much better selling point for such datasets.\\
+I've modified the point on cluster redshifts to focus it on high-redshift clusters.  At $z<0.8$, redMaPPer/redMaGiC already perform extraordinarily well, and any overlap with spectroscopic samples is probably enough to further confirm that to z~1.2.\\
+I'm not sure whether Will meant cosmology with the most-massive-cluster test (Mortonson et al. 2013)?  I think this outside the LSST realm, because the most massive high-redshift clusters will first be found by the SZ surveys.  Also, this test requires multiple mass measurement, and I think deep weak-lensing data for such candidates will be gathered before LSST 10-year depth is complete.}
+
+
+%% ----------------------------------------------------------------------
+%
+%\subsection{Cluster Mass Function: Spectroscopic Surveying in Cluster Fields}
+%\label{sec:sl:clusters}
+%{\it Will Dawson and others}
+%
+%{\it Note from Will: While I have done a fair amount of cluster weak lensing and
+%spectroscopy work, this has been focused on dark matter science, I am not
+%actually an expert in cluster mass function cosmological constraints. That said
+%I have drafted some text that I hope will describe the methods and needed
+%capability (or capabilities) in enough detail that someone could determine
+%whether they overlap with other needs. I am also includeing all spectroscopic
+%cluster studies and those limited to strong lensing; we can move the text later
+%if we like.}
+%
+%{\it Basic Premis}: Cosmology is sensitive to the abundance of rare massive
+%clusters observed out to and beyond $z\sim 1$. For example, Takada \& Spergel
+%(2014) have shown that a characterization of the most massive clusters can
+%improve the constraining power of future cosmic shear surveys (e.g., LSST, and
+%WFIRST) by approximately a factor of two, provided the cluster masses and
+%redshifts are accurately constrained.
+%
+%Spectroscopy of cluster galaxies can improve LSST cluster mass function
+%constraints in a number of ways:
+%\begin{itemize}
+%  \item {\it Redshifts of multiply imaged background galaxies}: Combined strong
+%  and weak lensing measurements of clusters can improve both the cluster mass
+%  and concentration constraints by approximately a factor of two (Umetsu et
+%  al.~2010). So it is possible to improve the LSST cluster weak lensing
+%  constraints by combining strong lensing measurement of the strongly lensed
+%  background galaxies (preseumably identified from space-based observations,
+%  such as HST or WFIRST, but potentially from LSST alone). However, redshifts of
+%  the multiply lensed galaxies are needed in order to properly constrain the
+%  cluster mass distribution. There has been some work recently by Keren Sharon's
+%  group on the number of multiply lensed galaxy redshifts that are necessary for
+%  a given lens model accuracy. Most of the multiply lensed galaxies are faint $R
+%  \gtrsim 23$ and require large diameter telescopes.
+%  \item {\it Accurate cluster redshifts}: For cosmological constraints it is
+%  necessary to know both the mass and redshift of the clusters. While it is
+%  possible to obtain better than average photometric redshifts of clusters due
+%  to their being hundreds to thousands of galaxies to beat down the Poission
+%  photo-z noise and the tight red sequence color relation, constaints can be
+%  improved (how much) with accurate redshifts from spectroscopy. It is possible
+%  to accomplish this with one to a few redshifts of the brightest cluster
+%  galaxies. The instrument requirements are pretty relaxed for this science
+%  since on only needs a few redshifts per pointing of rather bright galaxies.
+%  \item {\it Cluster galaxy velocities as a probe of the cluster potential}: The
+%  spectroscopic caustic method (Kaiser 1987; Regos \& Geller 1989) is the only
+%  other successful stand alone method, in addition to weak lenising, of probing
+%  the mass density profile to comparably large cluster radii. This is important
+%  since joint CMB+SZE constraints indicate that SZE-derived {\em Planck} masses
+%  underestimate the true $M_{500}$ masses by $b=1-\langle
+%  M_{Planck}/M_\mathrm{true}\rangle\sim 43\%$ $\sim43\%$ --- far from the $\sim
+%  20\%$ expected due to deviations from the influence of feedback, non-thermal
+%  pressure, and cluster shapes (Battaglia+ 2012). Of even greater concern is
+%  that according to WL studies (Sereno \& Ettori 2015), the bias appears to vary
+%  with mass. SZE mass estimates are calibrated in part based on X-ray
+%  temperatures with spectroscopy that is only reliable out to $r_{2500}\sim
+%  0.25r_\mathrm{vir}$. Recent WL analyses of the {\em Planck} sample, that probe
+%  the mass distribution to larger radii, yield $1-\langle
+%  M_{Planck}/M_\mathrm{WL}\rangle\sim 30\%$ at the $\sim 10\%$ uncertainty level
+%  (von der Linden+ 2014; Hoekstra+ 2015), somewhat relaxing the {\em Planck}
+%  tension. Hinting at the importance of having probes of the cluster potential
+%  out to large radii ($\sim$ the virial radius). To realize this science would
+%  require more than a hundred spectroscopic redshifts per cluster, with a
+%  moderate resolution spectrograph. A highly multiplexed moderate resolution
+%  spectrograph, that can simulatinously target objects within $\lesssim
+%  5$\,arcsecons of one another (due to the dense cluster environment). I (wd) am
+%  not sure how many clusters would need to be surveyed to make a significant
+%  improvement to planned LSST cluster cosmology.
+%  \item {\it Redshift space distortions}: This is a probe of modified gravity,
+%  and similar to the spectroscopic caustic method requires hundreds of
+%  spectroscpic redshifts of cluster galaxies. The spectroscopic demands are the
+%  same as the caustic method as well. I (wd) am not sure how many clusters we
+%  would need to make this measurement for.
+%\end{itemize}
+%
+%\ldots
+%
+%% ======================================================================
