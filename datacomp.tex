@@ -1,0 +1,108 @@
+\section{Data \& Computing Resources}
+\label{sec:datacomp}
+
+{\it Necessary resources for data and computing, beyond core LSST project deliverables, to achieve LSST cosmological science goals. Adam Bolton and others.}
+
+The dark-energy science mission of LSST imposes numerous requirements on 
+data resources and computing infrastructure for its success. Many of these requirements 
+may be beyond the current baseline for LSST construction 
+and operations, and some may also be beyond capabilities currently 
+anticipated within the DOE-supported LSST Dark-Energy Science Collaboration (DESC)\@.
+This section describes these required capabilities as they flow from dark-energy 
+science requirements.
+
+\subsection{Data-set access and definition}
+
+The analysis of large LSST datasets for derivation of dark-energy parameter constraints 
+will involve development and application of analysis codes by large teams of 
+scientists working over periods which are likely to extend over many years, and which will 
+require long-term stability and accessibility for scientific reproducibility. This translates 
+into requirements that LSST's released static-sky datasets be: 
+
+\begin{itemize}
+\item Version controlled
+\item Exposed through machine-readable programmatic interfaces
+\item Maintained on accessible storage resources for many-year timescales
+\end{itemize}
+
+\subsection{Combination of LSST data with other data sets}
+
+Multiple dark-energy science analyses of LSST data will rely on the combination 
+of LSST data with redshifts and object parameters from other surveys (both imaging 
+and spectroscopic). These analyses impose requirements for: 
+
+\begin{itemize}
+\item Long-term access to curated copies of auxiliary datasets
+\item Computing infrastructure sufficient for co-analysis of LSST data with auxiliary data
+\end{itemize}
+
+\subsection{Likelihood characterization}
+
+Cosmological analyses of LSST data sets will require accurate physical characterization of 
+the populations of tracer objects used. This will be necessary both to understand the 
+selection-functions of the samples themselves and their evolution with redshift, 
+and to connect with physical models for the bias recipes through which these 
+populations are related to the underlying dark-matter distribution. In many instances, the 
+salient physical parameters of tracers in LSST data may be measured at a level of significance 
+that does not admit sufficient characterization through simple Gaussian errors or covariances. 
+Such analyses will therefore require: 
+
+\begin{itemize}
+\item Explicit identification of all LSST catalog-object 
+parameters that are relevant as input to cosmological analysis
+\item Sufficient characterization of the joint likelihood of these measured 
+parameters on an object-by-object basis, either through direct reporting 
+within LSST catalogs, or through custom determination using LSST Level 3 
+software infrastructure
+\end{itemize}
+
+\subsection{Redshift data validation}
+
+Cosmological analyses of LSST data that rely on spectroscopic redshifts will impose requirements on 
+the quality of those redshift data in terms of completeness, purity, precision, and accuracy. In the case 
+of spectroscopic samples adopted from other surveys, the requirements for LSST analysis may be 
+different than those imposed by the primary science case of those other surveys. Therefore, all 
+spectroscopic samples used in LSST dark-energy science analysis will require: 
+
+\begin{itemize}
+\item Quantitative specification of the science requirements for redshift and parameter measurements
+\item Controlled software infrastructure for validating spectroscopic catalogs 
+against LSST dark-energy science requirements
+\item Software-development infrastructure for the modification of redshift- and parameter-measurement codes, 
+for cases in which a failure to meet requirements is traced not to spectroscopic target-selection or 
+observing, but rather to the analysis software used for delivering redshifts from the data
+\end{itemize}
+
+\subsection{Mock catalogs}
+
+Simulations, and mock catalogs based on those simulations, will be necessary for multiple 
+dark-energy science applications of LSST. These include the characterization of covariances in 
+large-scale structure measurements across length scales, determination of the statistics of 
+line-of-sight density projection effects for strong-lensing systems, and forward modeling 
+of statistical estimators as a function of cosmological parameters. These applications will require: 
+
+\begin{itemize}
+\item Allocation of sufficient computing and storage resources to conduct suites of cosmological 
+$N$-body simulations tailored to LSST dark-energy science analysis
+\item Support for the generation, documentation, and application of mock LSST catalogs based on 
+appropriate simulations.
+\end{itemize}
+
+\subsection{Survey characterization}
+
+Precision cosmological measurements of the baryon acoustic oscillation (BAO) feature using LSST
+data will be sensitive to percent-level systematics that may vary across the LSST footprint in a 
+complex field-dependent geometric pattern. In order that these variations do not compromise 
+the precision and accuracy of the cosmological measurements, the following capabilities 
+will be required: 
+
+\begin{itemize}
+\item Sufficient analysis within core LSST observing and data-reduction operations to enable 
+determination of field-dependent quantities relevant for dark-energy science analysis 
+\item Computation of weight-masks for bright stars, stellar number density, effective seeing, and 
+effective depth in LSST static-sky data releases, along with a documented and 
+supported data-model for the encoding of these masks
+\item Software infrastructure for incorporating these masks into LSST dark-energy parameter analysis
+\end{itemize}
+
+
