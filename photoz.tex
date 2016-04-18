@@ -1,30 +1,119 @@
 % ======================================================================
 
-\section{Photo-z}
+%\section{Photo-z}
 \label{sec:photoz}
 
-\subsection{Scientific Justification}
+Many LSST probes of dark energy will be greatly strengthened by the addition of spectroscopic redshift measurements for large samples of galaxies.  Spectroscopic samples to train photometric redshift algorithms will improve constraints from almost all LSST extragalactic science; while similar spectroscopy can be important for investigating the effects of intrinsic alignments between galaxies on the observed weak lensing signal or for improving the use of galaxy clusters as a cosmological probe.  This work will benefit from spectrographs that maximize multiplexing, areal coverage, wavelength range, resolution, and telescope aperture, as described below.
 
-\subsection{Experimental Design}
+Larger, wider area samples of bright galaxies and QSOs with redshifts, such as those provided by DESI, can be used to calibrate the actual results of photometric redshift algorithms via cross-correlation measurements; the same samples can contribute to cross-correlation studies of intrinsic alignments and LSST large-scale structure.  We will focus on the photometric redshift algorithms below, as they are broadest in impact and their requirements have been studied in the most detail; however, a broad swath of dark energy science would benefit from the same capabilities.
 
-\subsection{Quantitative Estimate of Resource Needs}
+\section{Scientific Justification}
 
-\subsection{Other Science Enabled}
+LSST dark energy and extragalactic science will be critically dependent upon photometric redshifts (a.k.a. photo-z's): i.e., estimates of the redshifts of objects based only on flux information obtained through broad filters.  Higher-quality, lower-RMS-error photo-z's will result in smaller random errors on parameters of interest and enable analyses in narrower redshift bins; while systematic errors in photometric redshift estimates, if not constrained, may dominate all other uncertainties when studying cosmological parameters.  Both optimizing and calibrating photo-z's will be dependent upon having secure redshift measurements from spectroscopy.
 
-\subsection{Photometric redshift training and calibration}\label{subsec:training}
+We can divide the utility of spectroscopy for photo-z's into two parts: 
+\begin{itemize}
+\item {\it Training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors.  Essentially, {\bf the goal of training is to minimize all moments of the distribution of differences between photometric redshift and true redshift}, rendering the correspondence as tight as possible, and hence maximizing the three-dimensional information in a sample; and 
 
-LSST photometric redshifts will be dependent upon large spectroscopic samples with highly-secure redshift measurements for two purposes: 
-
-$\bullet$ {\it training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors; and 
-
-$\bullet$ {\it calibration}, the determination of the actual bias and scatter in redshifts produced by a given algorithm (for most purposes, this reduces to the problem of determining the actual redshift distribution for samples selected based on some set of properties).  
-
+\item {\it Calibration}, the determination of the actual bias and scatter in redshifts produced by a given algorithm (for most purposes, this reduces to the problem of determining the actual redshift distribution for samples selected based on some set of properties).  Essentially, {\bf the goal of calibration is to determine with high accuracy the moments of the distribution of true redshifts of the samples used for a given study}.  
+\end{itemize}
 Different datasets will be needed for each of these purposes.
+
+\subsection{Training}
+
+{\bf Training} methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. The larger and more complete the training set is, the smaller the RMS error in photo-z estimates should be, increasing LSST's constraining power.  For instance, LSST delivers photo-z's with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-z's in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$. 
+
+With a perfect training set of galaxy redshifts down to LSST magnitude limits, we could achieve the system-limited performance; this would improve the Dark Energy Task Force figure of merit from LSST lensing+BAO studies by $\sim25$\%, with much larger impact on a variety of extragalactic science (e.g., the identification of galaxy clusters).  {\bf Better photometric redshift training will improve almost all LSST extragalactic science, and hence addresses a wide variety of decadal science goals.}  To enable this, we need secure spectroscopic redshifts for as wide a range of galaxies as possible down to the magnitude limits of key LSST samples ($i<25.3$ for the weak lensing ``gold sample'').
+
+\subsection{Calibration}
+
+Similarly, secure spectroscopic redshifts are needed for {\bf calibration}; e.g., the determination of both any overall bias in photo-z's  as well as their true scatter.  {\bf Inadequate calibration will lead to systematic errors in the use of photo-z's, affecting almost all extragalactic science with LSST and hence many decadal science priorities}.  It is estimated that the true mean redshift for each sample used for LSST cosmology (e.g., objects selected to be within some bin in photometric redshift) must be known to $\sim 2\times10^{-3}(1+z)$, i.e., 0.2\%.
+If extremely high completeness (>99.9\%) is attained in the spectroscopic samples used for training, then LSST calibration requirements would be met directly. However, existing deep redshift samples have failed to obtain secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future small-area, deep redshift samples will not solve the calibration problem. 
+
+Instead, we can utilize cross-correlation methods to calibrate photo-z's.  These techniques cross-correlate the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift distribution we aim to characterize.  We can then exploit the fact that bright galaxies with easily-measured spectroscopic redshifts trace the same underlying dark matter distribution as fainter objects for which spectroscopy is difficult.    By measuring the cross-correlation signal as a function of spectroscopic redshift, one can determine the $z$ distribution of a purely photometric sample with high accuracy.  The key data needed for photo-z calibration via cross-correlations are redshift samples with very large numbers of objects over a wide area of sky, spanning the full redshift range of LSST targets of interest.
+
+%NOAO guidelines:
+%
+%The scientific justification should explain the overall goals of
+%your program in the context of your field, as well as the importance
+%of your program to astronomy.
+%Writing a good scientific justification is an art.  It takes
+%skill and practice.  And it requires a good scientific idea.
+%This last you must supply but a few general guidelines
+%about proposal writing might still be helpful...
+%
+%\begin{itemize}
+%\item
+%State succinctly and clearly the problem you are trying to solve
+%and the progress that will be made toward doing so if the proposed
+%observations are successful.  If the review panel members have to work hard
+%even to understand what you want to do, they are unlikely to be
+%sympathetic to your proposal.
+%
+%\item
+%Explain clearly why the project is important and how it
+%relates to the broad context and important issues in your field.
+%Many proposals focus too tightly on a specific observational
+%goal (e.g. ``measure the velocity dispersion of this cluster of galaxies'')
+%without explaining why it is important or how it relates to a
+%significant question about the Universe.
+%
+%\item
+%Be specific.  If your observations will ``constrain theoretical
+%models,'' then discuss what will be constrained and why those
+%constraints matter.  Make sure the review panel understands exactly why
+%the observations you propose will make a difference in your field,
+%and exactly how the observations will refine or
+%require changes in the theory.
+%
+%\item
+%Keep it simple.  Try to focus on the central idea of your proposal.
+%Complex arguments are hard to explain and hard for the panel members to follow.
+%Distracting tangential arguments obscure the theme of your proposal.
+%
+%\item
+%Include a figure to help explain what you want to do.  Sample
+%data or model predictions shown in a figure often help clarify
+%complex arguments for the panel members.
+%
+%\item
+%Keep it short.  Never exceed a page for the text of the scientific
+%justification, and never reduce the font size.  It may even help to
+%be a little under a page, and increase the font size a little!
+%Organize your presentation with paragraphs, headings, and bullets
+%so it is easy to read.
+
+
+\section{Experimental Design}
+
+\subsection{Training}
 
 For training, we will require spectroscopy of at least 20,000 galaxies in total over at least 15 fields each with diameter of at least 20 arcmin, spanning the full magnitude range of LSST weak lensing samples ($i<25.3$); cf. Newman et al. 2015.  A smaller sample of galaxies in clusters would also enable tests of whether photometric redshift training is accurate in this regime.  Because of the need for high redshift efficiency and robust redshift determinations, as well as the large sample sizes required with long exposure times necessary, an OIR spectrograph covering the full optical window ($\sim$4000-10,000 Angstroms) with sufficient resolution to split the [OII] 3727 doublet ($R>\sim 3000$), with large multiplexing ($>\sim 1500$) and field of view ($>\sim 20$ arcmin diameter), on as large a telescope as feasible (given that most sources will be near $i=25.3$), will be needed.  
 
+\subsection{Calibration}
+
 For calibration, we expect to use the cross-correlation method; this will require spectroscopy of at least 100,000 objects in total over multiple independent fields at least 100 deg$^2$ in area each, spanning the full {\em redshift} (but not necessarily {\em magnitude}) range of LSST samples.  DESI samples should exceed this requirement (with $\sim 4000$ deg$^2$ of expected overlap), but it is possible that photometric redshift systematics will be different in this higher-declination (and hence higher-airmass) portion of the LSST footprint.   Given this risk, a DESI-like spectrograph (with wide field of view, $\sim 5000\times$ multiplexing, full optical coverage, sufficient resolution to split [OII], and a ~4m diameter telescope aperture) in the Southern hemisphere would enable ideal calibration via cross-correlations.  
 
+
+
+%
+%NOAO guildelines: 
+%The review panel looks to this section to find out about the overall
+%strategy of your observational program.  Why do you need the telescopes
+%and instruments you request? How are your targets selected?
+%Why do you need spectroscopy or imaging, and what measurements will
+%you make from the data?  Why is your approach to be preferred over
+%some other approach, what must the minimum sample size be to achieve
+%your scientific goals (and why), and why are your
+%observations likely to be better than previous work in the field?
+
+
+
+\section{Quantitative Estimate of Resource Needs}
+
+\section{Other Science Enabled}
+
+\subsection{Photometric redshift training and calibration}\label{subsec:training}
 %{\em A) Photo-z training and calibration (including in cluster regime,
 %spectroscopy of blends identified in space-based imaging).}
 
@@ -52,8 +141,8 @@ under the assumption of a single isolated galaxy (currently all photo-z
 algorithms). By definition these ambiguous blends will go undetected, so it is likely that the best strategy for mitigation will be calibration of the effects.  One option  is to use overlapping space-based imaging in both the field and cluster
 environments to identify a sample of ambiguous blends and observe these galaxies
 with a high-multiplexing, medium resolution spectrograph with large enough slits or fiber heads to encompass both components of a blend.
-
-{\em Note: ultimately, would need some estimate of sample size.  I'll admit that I'm not convinced a spectroscopic campaign focused on blends would be very efficient nor provide a better way of characterizing the effect than predicting it from clustering measurements + redshift distributions + space-based imaging (since the key question is what fractions of blends are same-redshift vs. different-z). --JAN}
+%
+%{\em Note: ultimately, would need some estimate of sample size.  I'll admit that I'm not convinced a spectroscopic campaign focused on blends would be very efficient nor provide a better way of characterizing the effect than predicting it from clustering measurements + redshift distributions + space-based imaging (since the key question is what fractions of blends are same-redshift vs. different-z). --JAN}
 % Since resolution in the redshift
 %dimension is all that is needed for such a study, a simple slit-based
 %spectrograph (with the slit properly positioned), and potentially a fiber-based
