@@ -1,53 +1,46 @@
 \section{Weak lensing}
 \label{sec:wl}
 
-A supporting science case that could use an identical (or very similar) dataset to those described
-in Section~\ref{sec:design} comes from the area of weak lensing.  Multi-object spectroscopy can be
-used to help mitigate a major theoretical systematic for weak lensing: intrinsic alignments of galaxy
-shapes.
+Some of the strongest LSST constraints on dark energy are expected to come from measurements of the apparent shearing of galaxy images by weak gravitational lensing.  LSST weak lensing measurements are likely to be limited by our ability to characterize and mitigate systematic effects, including systematic errors in photometric redshifts (placing stringent requirements on photometric redshift calibration).  Another major potential source of systematic errors in weak lensing (WL) measurements of cosmological parameters could be characterized using identical (or at least very similar) datasets to those described in Section~\ref{sec:design}.  In particular, multi-object spectroscopy can be
+used to help mitigate the effects of intrinsic alignments between the shapes of galaxies that are physically close to each other.
 
-Intrinsic alignments (IA) of galaxy shapes with the cosmic web are a contaminant to weak lensing
-measurements, since WL measurements assume that all coherent alignments are due to lensing. IA have
-been robustly detected out to hundred Mpc scales, making them a serious theoretical uncertainty for
-WL cosmology contaminating both density-shape and shape-shape correlation functions.  Several
-methods have been developed for mitigating this systematic, including nulling (which loses a lot of
-cosmological information and leads to stringent constraints on photo-$z$ errors), forward modeling
-(which uses galaxy clustering, galaxy-shear, and shear-shear correlations measurements, and involves
-marginalizing over a model for how the alignments enter those measurements), and self-calibration
-(which does not require an {\em a priori} alignments model, but has certain assumptions that have
-not yet been validated).  Given the limitations of all these methods, it is important also to
+Intrinsic alignments (IA) of galaxy shapes with the cosmic web act as a contaminant to weak lensing
+measurements, since WL measurement methods generally assume that any coherent alignments are due to the apparent shearing of galaxy shapes from gravitational lensing. IA have
+been robustly detected out to hundred Mpc scales, and are strong enough to be a serious contributor to theoretical uncertainties in WL cosmology, contaminating both density-shape and shape-shape correlation functions.  Several
+methods have been developed for mitigating this systematic, including nulling (which significantly reduces the amount of
+cosmological information available and leads to stringent constraints on photo-$z$ errors)\footnote{Question for Rachel: are these constraints on per-object random errors, or on overall calibration of photo-z's?}, forward modeling
+(which utilizes galaxy clustering, galaxy-shear, and shear-shear correlation measurements, and involves
+marginalizing over the parameters of a model for how the alignments affect those measurements), and self-calibration
+(which does not require an {\em a priori} alignments model, but relies on assumptions that have
+not yet been validated).  
+
+Given the limitations of all these methods, it is important also to
 explore intrinsic alignment effects directly, which requires spectroscopic redshifts to determine
 which galaxies are in physical proximity to each other.  This direct exploration will provide
-intrinsic alignments models as inputs to the mitigation methods that need models; it requires low
-resolution spectroscopy or spectro-photometric redshifts similar to those from the PRIMUS
-survey, but potentially for a deeper sample of galaxies.
-% JAN: I added that last sentence in response to a question from Joan Najita:
+intrinsic alignments models as inputs to the mitigation methods that need models.  % JAN: I added that last sentence in response to a question from Joan Najita:
 %How critical is the spectroscopy? The first paragraph mentions several methods -- do they all need spectroscopy? If not, how much does the spectroscopy add to the science result? (Is it "nice to have" or "critical"?)
 
-
 Current data, primarily from the SDSS, provide us a template for how intrinsic alignments scale with
-galaxy type, luminosity, and redshift for $z\lesssim 0.5$.  However, we need this information for
-galaxies at higher redshifts, and we need better constraints on the alignments of blue galaxies, in
-order to place reasonable priors when carrying out the WL analysis with LSST. Generally, this
-requires both good imaging and redshift information, in order to better localize the galaxy pairs in
-3D and measure galaxy shapes.  Thus, the LSST data itself will ultimately be quite informative about
+galaxy type, luminosity, and redshift for $z\lesssim 0.5$.  However, we need similar information both for
+galaxies at higher redshifts and for blue galaxies in general in order to develop reasonable priors for carrying out the WL analysis with LSST. Generally, this
+requires both good imaging and redshift information, in order to both localize the galaxy pairs in
+3D and measure galaxy shapes.   LSST data itself will ultimately be quite informative about
 IA despite the size of the photo-$z$ errors, but there is still value in strong external priors on
-the IA model using spectroscopic redshifts, because IA are degenerate with other systematics (photo-$z$ errors and certain shear
-systematics).
+the IA model using spectroscopic redshifts, because IA are degenerate with other systematics (photo-$z$ errors and certain shear systematics).
 
 In principle a direct measurement of IA requires a spectroscopic or spectro-photometric dataset that covers decent-sized
-contiguous areas (so as to constrain alignments to tens of Mpc) but also has a decent sampling rate
-of a {\em representative galaxy sample} within these fields.  This seems somewhat orthogonal to a
-``many small fields to beat down cosmic variance'' approach as in the ``training'' dataset described in
-Sec.~\ref{sec:design}), but perhaps a compromise could be reached. For example, with a field
-size of 1 degree, at $z\sim 0.8$ this corresponds to $\sim 25$Mpc, which should be helpful in
-constraining the IA model on the scales below $\sim 10$Mpc where existing theoretical models are
-most uncertain. Another question is whether
-we could tolerate a more sparse and/or unrepresentative sampling of the density field over a wider
-area, and constrain IA using cross-correlations with the spectroscopic galaxies instead of the
-auto-correlations of them (using a method like that from Blazek et al 2012 or Chisari et al 2014).
+contiguous areas (so as to constrain alignments out to tens of Mpc) but also has a decent sampling rate
+of a {\em representative galaxy sample} within these fields.  As an example of what sort of field size is desirable, 1 degree at $z=0.8$ corresponds to a distance of $\sim 35 h^{-1}$ Mpc comoving, which should be well-suited to
+constraining IA models on the $\lesssim 10 h^{-1}$Mpc scales where existing theoretical models are
+most uncertain.  The desirability of large field sizes is somewhat in tension with the approach of surveying many modest-size fields to mitigate sample/cosmic variance as employed in the ``training'' dataset described in
+Sec.~\ref{sec:design}), but it is quite possible that a training set that is still well-suited for IA studies could be developed (we note, for instance, that if the Subaru/PFS spectrograph were used for the training samples, it would have a minimum field size well-suited for IA studies).  
+
+It is worth noting that, although the medium-resolution MOS spectroscopy envisioned for photo-$z$ training could serve the needs of IA characterization, the redshift RMS accuracy needed for this purpose is not particularly high.  Many-band narrow-band imaging, low-resolution spectroscopy, or spectro-photometric redshifts similar to those from the PRIMUS survey could deliver sufficiently low errors, presuming that highly-secure redshifts are obtained from them (the $\sim 5--10\%$ incorrect-z rates from PRIMUS would likely be problematic here). However, the galaxies for which redshifts to characterize IA for LSST are required are much fainter than those studied in previous low-resolution surveys; new instrumentation on larger telescopes would be needed to meet this goal.
+
+ An open question is whether we could tolerate a more sparse and/or unrepresentative sampling of the density field over a wider area, and constrain IA using cross-correlations with the spectroscopic galaxies instead of employing 
+autocorrelation measurements (using a method like that from Blazek et al 2012 or Chisari et al 2014).
 The dataset needed for this could well look like  the ``calibration'' dataset for enabling the
-photo-$z$ cross-correlation method in Sec.~\ref{sec:design}. More exploration is needed to determine
-precise survey design requirements for this supporting science case, but we anticipate they will be
-reasonably close to what is in Sec.~\ref{sec:design}.
+photo-$z$ cross-correlation calibration method, as described in Sec.~\ref{sec:design}. More exploration is needed to determine precise survey design requirements for this supporting science case, but we anticipate they will be
+reasonably close to what is in Sec.~\ref{sec:design}.  Having both photo-$z$ training and calibration sets available, and making sure they are well-optimized for IA purposes, will provide us with multiple potential routes to an answer, maximizing the chances that success will be achieved.
+
 
