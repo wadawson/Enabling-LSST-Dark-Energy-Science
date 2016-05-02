@@ -71,7 +71,64 @@ The main systematic uncertainty in this measurement arises from our imperfect un
 {\bf  JAN TODO: Incorporate the following into the strong lensing chapter.  This doesn't really belong with MOS.}
 \subsubsection{Cluster density profiles}
 
-Clusters with multiple mass probes covering a range in radial range can be used to reconstruct the cluster density profiles, which serves as a validation of the density profiles assumed in the weak-lensing mass measurements, and could be used to test the properties of dark matter, if the astrophysical processes at cluster cores can also be understood (Peter et al. 2013).  In addition to the LSST weak-lensing measurements, which best constrain cluster masses on $\sim1$~Mpc scales, such datasets should include BCG velocity dispersion profiles, spectroscopic redshifts of any strongly lensed multiple image systems, and relatively deep X-ray imaging. In terms of OIR capabilities, this translates to deep long-slit BCG spectra, as well as dedicated efforts to follow-up cluster strong lensing features with optical/NIR multi-object spectroscopy.  %{\it AvdL comment: The best candidate clusters will probably all well known before LSST 3-year?}
+Clusters with multiple mass probes covering a range in radial range can be used to reconstruct the cluster density profiles, which serves as a validation of the density profiles assumed in the weak-lensing mass measurements, and could be used to test the properties of dark matter, if the astrophysical processes at cluster cores can also be understood (Peter et al. 2013).  In addition to the LSST weak-lensing measurements, which best constrain cluster masses on $\sim1$~Mpc scales, such datasets should include BCG velocity dispersion profiles, spectroscopic redshifts of any strongly lensed multiple image systems, and relatively deep X-ray imaging. In terms of OIR capabilities, this translates to deep long-slit or IFU spectra of the BCG, as well as dedicated efforts to follow-up cluster strong lensing features with optical/NIR multi-object spectroscopy.  %{\it AvdL comment: The best candidate clusters will probably all well known before LSST 3-year?}
+
+\subsubsection{Merging Galaxy Clusters}
+
+Merging galaxy clusters provide one of the best means of constraining the
+self-interacting nature of DM particles, which can only be tested
+astrophysically. The merging cluster SIDM signature is also very different from
+that of galaxy and galaxy cluster density profile constraints, that can be
+mimicked by baryonic processes, and provides a larger velocity range to test
+velocity dependent SIDM models.
+
+{\bf Motivation:} The tightest SIDM constraint comes from dissociative mergers
+that are seen soon after first pericenter passage, when the mostly collisionless
+galaxies and DM have passed through each other and proceeded ahead of much of
+the gas, which formed a central pancake during collision.  If DM self-interacts
+it would experience a drag force during the collision and thus lag the galaxies.
+This basic picture has been confirmed by simulations (Randall et al. 2008,
+Kahlhoefer et al. 2013), and Randall et al. (2008) find an upper limit of
+${\sigma_{DM}\over m} < 1.25$ cm$^2$ g$^{-1}$ based on the galaxy-DM offset
+(which has a nonzero central value but is consistent with zero) in the Bullet
+Cluster.  That limit is a factor of a few from being very interesting
+astrophysically because cross sections of 0.1-0.5 would explain a number of
+anomalies referenced elsewhere in this report: cluster density profiles (Newman
+et al 2013a,b), the absence of high-density Milky Way satellites predicted by
+cold dark matter (CDM) simulations (Boylan-Kolchin et al 2011, 2012), the
+cusp-core problem (Navarro et al 2004, Walker \& Pe\~{n}arrubia 2011, Wolf \&
+Bullock 2012), and other halo shape and profile observations (Peter et al 2013,
+Rocha et al 2013).  Furthermore, there are well-motivated particle models which
+yield cross sections in this range (Arkani-Hamed et al.\,2009; Feng et
+al.\,2010).  SIDM detected at this level would very much break the dominant WIMP
+paradigm, which is also looking weaker based on recent collider and
+direct-detection results.  However, cored density profiles, satellites with low
+central densities, etc., can also be explained by baryonic processes. Using
+mergers as DM colliders has the potential to break this degeneracy.
+
+{\bf Needs:} SIDM in merging galaxy clusters can be constrainted by measuring
+the distribution of the effectively collisionless galaxies relative to the dark
+matter distribution. LSST is capable of providing both of these measurements
+through photometric selection of cluster galaxies and weak/strong lensing
+mapping of the dark matter distribution. However, the The predicted galaxy-DM
+offset is a function of cluster surface mass density, collision speed, and time
+since pericenter as well as the DM particle model. Thus it is just as important
+to model the geometry and dynamical history of the merger (e.g., Dawson 2013).
+This requires measuring the masses of the subclusters (to evolve the system back
+in time to infer the speed at the time of pericenter and time since pericenter)
+and their relative line-of-sight (LOS) velocity (to constrain the 3-d velocity
+and projection angle). To accurately measure the relative LOS velocity of the
+merging clusters requires and identify potential substructure that can confuse
+the interpretation of the merger, requires approximately 100 redshifts per
+merging subcluster. Many of the order thousand dissociative merging clusters
+discovered by LSST will be at redshifts of $>0.5$. The scale of individual
+clusters is $\sim 1$\,Mpc and the separation of subclusters in a dissociative
+merger is $\sim 1--5$\,Mpc. To most efficiently survey these mergers requires a
+highly multiplexed multi-object spectrograph with a field of view of $\sim
+15$\,arcminutes. Furthermore, given the dense cluster environment it is ideal to
+be able to simultaneously observe galaxies separated by $\lesssim
+5$\,arcseconds. To obtain the needed hundreds of cluster spectra at these
+redshifts it will be necessary to survey down to $R\sim23$.
 
 %
 %{\it Note from Anja:  Will suggested that strong lensing and/or galaxy velocities can help improve the cluster mass calibration for cluster count cosmology over the default plan of using weak-lensing.  For cluster counts, I remain skeptical on both accounts. Strong lensing is awesome and gives us very precise mass constraints in cluster cores ($\sim 100$~kpc), but requires significant extrapolation to measure masses on the scales of $R_{500} - R_{200}$ ($\sim 1$~Mpc).  Moreover, there is a selection bias towards clusters that are over-concentrated or aligned along the line-of-sight.  While there is simulation work to account for such biases (e.g. Meneghetti et al.), the small scales that strong lensing probes require a thorough understanding of the gas physics at cluster cores, too, which still seems a daunting task.  I DO think strong lensing has a place in precise measurements of cluster density profiles in selected clusters, which is (1) informative for the weak-lensing work, and (2) can be used to probe the processes at cluster cores (both dark matter and cluster astrophysics, see work by Annika Peter).  Regarding the caustic method, I have only seen one blind test done on simulations (Old et al. 2014, 2015), in which it did not perform particularly well.  Those works showed that in general, velocity-based methods suffer even larger biases and scatters than weak-lensing masses.  I'm willing to believe that things look better if one has several hundreds of velocities per cluster, but that would be a significant investment of telescope time just to be comparable to the weak-lensing constraints.  I actually think that modified gravity is a much better selling point for such datasets.\\
