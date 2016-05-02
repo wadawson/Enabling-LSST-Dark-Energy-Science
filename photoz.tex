@@ -1,20 +1,21 @@
 % ======================================================================
-
-%\section{Photo-z}
+%\section{photo-$z$}
 \label{chap:photoz}
 
-Many LSST probes of dark energy will be greatly strengthened by the addition of spectroscopic redshift measurements for large samples of galaxies.  Spectroscopic samples to train photometric redshift algorithms will improve constraints from almost all LSST extragalactic science; spectroscopy obtained with the same instruments can be important for investigating the effects of intrinsic alignments between galaxies on the observed weak lensing signal or for improving the use of galaxy clusters as a cosmological probe, amongst other applications.  This work will benefit from spectrographs that maximize multiplexing, areal coverage, wavelength range, resolution, and telescope aperture, as described below.
 
-Larger, wider area samples of bright galaxies and QSOs with redshifts, such as those provided by DESI, can be used to calibrate the actual results of photometric redshift algorithms via cross-correlation measurements; the same samples can contribute to cross-correlation studies of intrinsic alignments and LSST large-scale structure.  We will focus on the photometric redshift algorithms below, as they are broadest in impact and their requirements have been studied in the most detail; however, a broad swath of dark energy science would benefit from the same capabilities.
+A key driver for LSST is to investigate the nature of the source of the accelerating expansion of the Universe.  The primary possibilities are that there is a new, unknown component which dominates the energy density in the Universe today (commonly labeled ``dark energy''), or else that Einstein's theory of General Relativity (GR) fails to provide an accurate description of the action of gravity on large scales (a class of models generally referred to as ``modified gravity'' theories).  Many of the planned cosmological measurements from LSST can also be used constrain neutrino masses and dark matter properties. 
+
+Almost all LSST probes of dark energy and related phenomena will be greatly strengthened by the addition of spectroscopic redshift measurements for large samples of galaxies.  Spectroscopic samples to train photometric redshift algorithms will improve constraints from almost all LSST extragalactic science; spectroscopy obtained with the same instruments can be important for investigating the effects of intrinsic alignments between galaxies on the observed weak lensing signal or for improving the use of galaxy clusters as a cosmological probe, amongst other applications.  This work will benefit from spectrographs that maximize multiplexing, areal coverage, wavelength range, resolution, and telescope aperture, as described below.  {\bf By strengthening LSST cosmological constraints and mitigating potential systematics, this spectroscopy will help LSST to address a key objective identified in the {\it New Worlds, New Horizons} report, studying the Physics of the Universe.}
+
+Larger, wider area samples of bright galaxies and QSOs with redshifts, such as those provided by DESI, can be used to calibrate the actual results of photometric redshift algorithms via cross-correlation measurements; the same samples can contribute to cross-correlation studies of intrinsic alignments and LSST large-scale structure.  We will focus on the photometric redshift algorithms below, as they are broadest in impact and their requirements have been studied in the most detail.  However, a broad swath of dark energy science would benefit from the same capabilities, and we highlight a few examples at the end of this chapter.
 
 \section{Scientific Justification}
 \label{sec:photoz_just}
 {\it Jeffrey Newman, Samuel Schmidt and others}
 
+LSST dark energy constraints, as well as almost all LSST extragalactic science, will be critically dependent upon photometric redshifts (a.k.a. photo-$z$'s): i.e., estimates of the redshifts of objects based only on flux information obtained through broad filters.  Improvements that yield higher-quality, lower-RMS-error photo-$z$'s will result in smaller random errors on parameters of interest and enable analyses in narrower redshift bins; while systematic errors in photometric redshift estimates, if not constrained, may dominate all other uncertainties when studying cosmological parameters.  Both optimizing and calibrating photo-$z$'s are dependent upon obtaining secure redshift measurements from spectroscopy.
 
-LSST dark energy and extragalactic science will be critically dependent upon photometric redshifts (a.k.a. photo-z's): i.e., estimates of the redshifts of objects based only on flux information obtained through broad filters.  Improvements that yield higher-quality, lower-RMS-error photo-z's will result in smaller random errors on parameters of interest and enable analyses in narrower redshift bins; while systematic errors in photometric redshift estimates, if not constrained, may dominate all other uncertainties when studying cosmological parameters.  Both optimizing and calibrating photo-z's are dependent upon obtaining secure redshift measurements from spectroscopy.
-
-For convenience, we divide the utility of spectroscopy for photo-z's into two parts: 
+For convenience, we divide the utility of spectroscopy for photo-$z$'s into two parts: 
 \begin{itemize}
 \item {\it Training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors.  Essentially, {\bf the goal of training is to minimize all moments of the distribution of differences between photometric redshift and true redshift}, rendering the correspondence as tight as possible, and hence maximizing the three-dimensional information in a sample; and 
 
@@ -24,17 +25,17 @@ Different datasets will be needed for each of these purposes.
 
 \subsection{Training}
 
-{\bf Training} methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. The larger and more complete the training set is, the smaller the RMS error in photo-z estimates should be, increasing LSST's constraining power.  For instance, LSST delivers photo-z's with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-z's in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$. 
+{\bf Training} methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. The larger and more complete the training set is, the smaller the RMS error in photo-$z$ estimates should be, increasing LSST's constraining power.  For instance, LSST delivers photo-$z$'s with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-$z$'s in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$. 
 
 With a perfect training set of galaxy redshifts down to LSST magnitude limits, we could achieve the system-limited performance; this would improve the Dark Energy Task Force figure of merit from LSST lensing+BAO studies by $\sim25$\%, with much larger impact on a variety of extragalactic science (e.g., the identification of galaxy clusters).  {\bf Better photometric redshift training will improve almost all LSST extragalactic science, and hence addresses a wide variety of decadal science goals.}  To enable this, we need secure spectroscopic redshifts for as wide a range of galaxies as possible down to the magnitude limits of key LSST samples ($i<25.3$ for the weak lensing ``gold sample'').
 
 \subsection{Calibration}
 
-Similarly, secure spectroscopic redshifts are needed for {\bf calibration}; e.g., the determination of both any overall bias in photo-z's  as well as their true scatter.  {\bf Inadequate calibration will lead to systematic errors in the use of photo-z's, affecting almost all extragalactic science with LSST and hence many decadal science priorities}.  It is estimated that the true mean redshift for each sample used for LSST cosmology (e.g., objects selected to be within some bin in photometric redshift) must be known to $\sim 2\times10^{-3}(1+z)$, i.e., 0.2\%.
+Similarly, secure spectroscopic redshifts are needed for {\bf calibration}; e.g., the determination of both any overall bias in photo-$z$'s  as well as their true scatter.  {\bf Inadequate calibration will lead to systematic errors in the use of photo-$z$'s, affecting almost all extragalactic science with LSST and hence many decadal science priorities}.  It is estimated that the true mean redshift for each sample used for LSST cosmology (e.g., objects selected to be within some bin in photometric redshift) must be known to $\sim 2\times10^{-3}(1+z)$, i.e., 0.2\%.
 
 If extremely high completeness (>99.9\%) is attained in the spectroscopic samples used for training, then LSST calibration requirements would be met directly. However, existing deep redshift samples have failed to obtain secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future small-area, deep redshift samples will not solve the calibration problem. 
 
-Instead, we can utilize cross-correlation methods to calibrate photo-z's.  These techniques cross-correlate the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift distribution we aim to characterize.  We can then exploit the fact that bright galaxies with easily-measured spectroscopic redshifts trace the same underlying dark matter distribution as fainter objects for which spectroscopy is difficult.    By measuring the cross-correlation signal as a function of spectroscopic redshift, one can determine the $z$ distribution of a purely photometric sample with high accuracy.  The key data needed for photo-z calibration via cross-correlations are redshift samples with very large numbers of objects over a wide area of sky, spanning the full redshift range of LSST targets of interest.
+Instead, we can utilize cross-correlation methods to calibrate photo-$z$'s.  These techniques cross-correlate the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift distribution we aim to characterize.  We can then exploit the fact that bright galaxies with easily-measured spectroscopic redshifts trace the same underlying dark matter distribution as fainter objects for which spectroscopy is difficult.    By measuring the cross-correlation signal as a function of spectroscopic redshift, one can determine the $z$ distribution of a purely photometric sample with high accuracy.  The key data needed for photo-$z$ calibration via cross-correlations are redshift samples with very large numbers of objects over a wide area of sky, spanning the full redshift range of LSST targets of interest.
 
 %NOAO guidelines:
 %
@@ -98,7 +99,7 @@ A previous whitepaper on {\it Spectroscopic Needs for Imaging Dark Energy Experi
 
 \begin{itemize}
 
-\item {\bf Spectroscopy of at least 30,000 objects down to the survey magnitude limits}, in order to characterize both the core of the photo-z/spectroscopic-z relationship and the nature of outliers (cf. Ma et al. 2006, Bernstein \& Huterer 2009, and Hearin et al. 2010); given LSST depth, this will require large exposure times on large telescopes.
+\item {\bf Spectroscopy of at least 30,000 objects down to the survey magnitude limits}, in order to characterize both the core of the photo-$z$/spectroscopic-z relationship and the nature of outliers (cf. Ma et al. 2006, Bernstein \& Huterer 2009, and Hearin et al. 2010); given LSST depth, this will require large exposure times on large telescopes.
 
 \item {\bf High multiplexing}, as obtaining large numbers of spectra down to faint magnitudes will be infeasible otherwise.
 
@@ -171,7 +172,7 @@ Multiplexing and telescope aperture should then be made as large as practical.  
 \section{Other Science Enabled by These Capabilities}
 
 %\subsection{Photometric redshift training and calibration}\label{subsec:training}
-%{\em A) Photo-z training and calibration (including in cluster regime,
+%{\em A) photo-$z$ training and calibration (including in cluster regime,
 %spectroscopy of blends identified in space-based imaging).}
 
 % For each science area, we should:
