@@ -160,3 +160,8 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+# Local folders
+attic
+litter
+
