@@ -3,11 +3,13 @@
 \label{chap:photoz}
 
 
-A key driver for LSST is to investigate the nature of the source of the accelerating expansion of the Universe.  The primary possibilities are that there is a new, unknown component which dominates the energy density in the Universe today (commonly labeled ``dark energy''), or else that Einstein's theory of General Relativity (GR) fails to provide an accurate description of the action of gravity on large scales (a class of models generally referred to as ``modified gravity'' theories).  Many of the planned cosmological measurements from LSST can also be used constrain neutrino masses and dark matter properties. 
+A key driver for LSST is to investigate the nature of the source of the accelerating expansion of the Universe.  The primary possibilities are that there is a new, unknown component which dominates the energy density in the Universe today (commonly labeled ``dark energy''), or else that Einstein's theory of General Relativity (GR) fails to provide an accurate description of the action of gravity on large scales (a class of models generally referred to as ``modified gravity'' theories).  Many of the planned cosmological measurements from LSST can also be used constrain neutrino masses and dark matter properties.
 
 Almost all LSST probes of dark energy and related phenomena will be greatly strengthened by the addition of spectroscopic redshift measurements for large samples of galaxies.  Spectroscopic samples to train photometric redshift algorithms will improve constraints from almost all LSST extragalactic science; spectroscopy obtained with the same instruments can be important for investigating the effects of intrinsic alignments between galaxies on the observed weak lensing signal or for improving the use of galaxy clusters as a cosmological probe, amongst other applications.  This work will benefit from spectrographs that maximize multiplexing, areal coverage, wavelength range, resolution, and telescope aperture, as described below.  {\bf By strengthening LSST cosmological constraints and mitigating potential systematics, this spectroscopy will help LSST to address a key objective identified in the {\it New Worlds, New Horizons} report, studying the Physics of the Universe.}
 
 Larger, wider area samples of bright galaxies and QSOs with redshifts, such as those provided by DESI, can be used to calibrate the actual results of photometric redshift algorithms via cross-correlation measurements; the same samples can contribute to cross-correlation studies of intrinsic alignments and LSST large-scale structure.  We will focus on the photometric redshift algorithms below, as they are broadest in impact and their requirements have been studied in the most detail.  However, a broad swath of dark energy science would benefit from the same capabilities, and we highlight a few examples at the end of this chapter.
+
+% ----------------------------------------------------------------------
 
 \section{Scientific Justification}
 \label{sec:photoz_just}
@@ -15,17 +17,16 @@ Larger, wider area samples of bright galaxies and QSOs with redshifts, such as t
 
 LSST dark energy constraints, as well as almost all LSST extragalactic science, will be critically dependent upon photometric redshifts (a.k.a. photo-$z$'s): i.e., estimates of the redshifts of objects based only on flux information obtained through broad filters.  Improvements that yield higher-quality, lower-RMS-error photo-$z$'s will result in smaller random errors on parameters of interest and enable analyses in narrower redshift bins; while systematic errors in photometric redshift estimates, if not constrained, may dominate all other uncertainties when studying cosmological parameters.  Both optimizing and calibrating photo-$z$'s are dependent upon obtaining secure redshift measurements from spectroscopy.
 
-For convenience, we divide the utility of spectroscopy for photo-$z$'s into two parts: 
+For convenience, we divide the utility of spectroscopy for photo-$z$'s into two parts:
 \begin{itemize}
-\item {\it Training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors.  Essentially, {\bf the goal of training is to minimize all moments of the distribution of differences between photometric redshift and true redshift}, rendering the correspondence as tight as possible, and hence maximizing the three-dimensional information in a sample; and 
-
-\item {\it Calibration}, the determination of the actual bias and scatter in redshifts produced by a given algorithm (for most purposes, this reduces to the problem of determining the actual redshift distribution for samples selected based on some set of properties).  Essentially, {\bf the goal of calibration is to determine with high accuracy the moments of the distribution of true redshifts of the samples used for a given study}.  
+\item {\it Training}, that is, making algorithms more effective at predicting the actual redshifts of galaxies, reducing random errors.  Essentially, {\bf the goal of training is to minimize all moments of the distribution of differences between photometric redshift and true redshift}, rendering the correspondence as tight as possible, and hence maximizing the three-dimensional information in a sample; and
+\item {\it Calibration}, the determination of the actual bias and scatter in redshifts produced by a given algorithm (for most purposes, this reduces to the problem of determining the actual redshift distribution for samples selected based on some set of properties).  Essentially, {\bf the goal of calibration is to determine with high accuracy the moments of the distribution of true redshifts of the samples used for a given study}.
 \end{itemize}
 Different datasets will be needed for each of these purposes.
 
 \subsection{Training}
 
-{\bf Training} methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. The larger and more complete the training set is, the smaller the RMS error in photo-$z$ estimates should be, increasing LSST's constraining power.  For instance, LSST delivers photo-$z$'s with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-$z$'s in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$. 
+{\bf Training} methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. The larger and more complete the training set is, the smaller the RMS error in photo-$z$ estimates should be, increasing LSST's constraining power.  For instance, LSST delivers photo-$z$'s with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-$z$'s in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$.
 
 With a perfect training set of galaxy redshifts down to LSST magnitude limits, we could achieve the system-limited performance; this would improve the Dark Energy Task Force figure of merit from LSST lensing+BAO studies by $\sim25$\%, with much larger impact on a variety of extragalactic science (e.g., the identification of galaxy clusters).  {\bf Better photometric redshift training will improve almost all LSST extragalactic science, and hence addresses a wide variety of decadal science goals.}  To enable this, we need secure spectroscopic redshifts for as wide a range of galaxies as possible down to the magnitude limits of key LSST samples ($i<25.3$ for the weak lensing ``gold sample'').
 
@@ -33,7 +34,7 @@ With a perfect training set of galaxy redshifts down to LSST magnitude limits, w
 
 Similarly, secure spectroscopic redshifts are needed for {\bf calibration}; e.g., the determination of both any overall bias in photo-$z$'s  as well as their true scatter.  {\bf Inadequate calibration will lead to systematic errors in the use of photo-$z$'s, affecting almost all extragalactic science with LSST and hence many decadal science priorities}.  It is estimated that the true mean redshift for each sample used for LSST cosmology (e.g., objects selected to be within some bin in photometric redshift) must be known to $\sim 2\times10^{-3}(1+z)$, i.e., 0.2\%.
 
-If extremely high completeness (>99.9\%) is attained in the spectroscopic samples used for training, then LSST calibration requirements would be met directly. However, existing deep redshift samples have failed to obtain secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future small-area, deep redshift samples will not solve the calibration problem. 
+If extremely high completeness (>99.9\%) is attained in the spectroscopic samples used for training, then LSST calibration requirements would be met directly. However, existing deep redshift samples have failed to obtain secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future small-area, deep redshift samples will not solve the calibration problem.
 
 Instead, we can utilize cross-correlation methods to calibrate photo-$z$'s.  These techniques cross-correlate the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift distribution we aim to characterize.  We can then exploit the fact that bright galaxies with easily-measured spectroscopic redshifts trace the same underlying dark matter distribution as fainter objects for which spectroscopy is difficult.    By measuring the cross-correlation signal as a function of spectroscopic redshift, one can determine the $z$ distribution of a purely photometric sample with high accuracy.  The key data needed for photo-$z$ calibration via cross-correlations are redshift samples with very large numbers of objects over a wide area of sky, spanning the full redshift range of LSST targets of interest.
 
@@ -88,10 +89,10 @@ Instead, we can utilize cross-correlation methods to calibrate photo-$z$'s.  The
 %Organize your presentation with paragraphs, headings, and bullets
 %so it is easy to read.
 
+% ----------------------------------------------------------------------
 
 \section{Experimental Design}
-
-\label{sec:design}
+\label{sec:photoz_design}
 
 \subsection{Training}
 
@@ -112,7 +113,7 @@ A previous whitepaper on {\it Spectroscopic Needs for Imaging Dark Energy Experi
 \item And finally, {\bf coverage of as many fields as possible ($\sim 15$ minimum)}, in order to minimize the impact of sample/ cosmic variance.  Cunha et al. (2012) estimated that 40-150 $\sim$ 0.1 deg$^2$ fields would be needed for DES for sample variance not to impact errors; however, we can do somewhat better by taking advantage of the fact that the variance itself is directly observable via the field-to-field variation in redshift distributions.  Nevertheless, with fewer than $\sim 15$ independent (i.e., widely separated) fields, it would be difficult to measure dispersions in counts amongst the fields directly, as measurements of standard deviations are broad and highly skewed for small N. We thus require at least this many fields.
 \end{itemize}
 
-In principle, a number of spectrographs currently in existence or being planned could meet these goals (i.e., they have sufficient wavelength coverage and spectral resolution to obtain secure redshifts over a wide range of galaxy properties).  However, the time required to conduct the needed survey will depend on the instrumental and telescope characteristics.  If sky coverage is low, the limiting factor will be how many tilings of the sky will be needed to cover $>15$ fields that are 20 arcmin in diameter (we will refer to this situation as ``field-of-view-limited'' or ``FOV-limited'').  If multiplexing is low, the limiting factor will be how many tilings are needed to reach 30,000 spectra (``multiplex-limited'').  Finally, if both of these factors are high, such that each field need only be observed once, the limiting factor will be how much exposure time it takes the telescope to achieve the desired depth (``Fields-limited'').  
+In principle, a number of spectrographs currently in existence or being planned could meet these goals (i.e., they have sufficient wavelength coverage and spectral resolution to obtain secure redshifts over a wide range of galaxy properties).  However, the time required to conduct the needed survey will depend on the instrumental and telescope characteristics.  If sky coverage is low, the limiting factor will be how many tilings of the sky will be needed to cover $>15$ fields that are 20 arcmin in diameter (we will refer to this situation as ``field-of-view-limited'' or ``FOV-limited'').  If multiplexing is low, the limiting factor will be how many tilings are needed to reach 30,000 spectra (``multiplex-limited'').  Finally, if both of these factors are high, such that each field need only be observed once, the limiting factor will be how much exposure time it takes the telescope to achieve the desired depth (``Fields-limited'').
 
 The actual time required for a survey in each of these scenarios will be:
 
@@ -120,13 +121,13 @@ The actual time required for a survey in each of these scenarios will be:
 
 {\it Multiplex-limited}:  $t_{observe}$ =(280 nights) $\times$ ($N_{objects}$ / 3$\times10^4$) $\times$ (2000 / Number of simultaneous spectra)$\times$(Equivalent Keck/DEIMOS exposure time / 100 hours) $\times$ (0.67 / observing efficiency) $\times$ (76 m$^2$  / telescope effective collecting area) $\times$ (0.3 / [telescope + instrument throughput]), or
 
-{\it Fields-limited}:  $t_{observe}$ =(280 nights) $\times$ ($N_{fields}$ / 15) $\times$ (Equivalent Keck/DEIMOS exposure time / 100 hours) $\times$ (0.67 / observing efficiency) $\times$ (76 m$^2$  / telescope effective collecting area) $\times$ (0.3 / [telescope + instrument throughput]), 
+{\it Fields-limited}:  $t_{observe}$ =(280 nights) $\times$ ($N_{fields}$ / 15) $\times$ (Equivalent Keck/DEIMOS exposure time / 100 hours) $\times$ (0.67 / observing efficiency) $\times$ (76 m$^2$  / telescope effective collecting area) $\times$ (0.3 / [telescope + instrument throughput]),
 
 where $t_{observe}$ is the total clock time required for observations (including overheads and weather, which both reduce observing efficiency); $N_{fields}$ is the total number of fields to be observed; and $N_{objects}$ is the total number of objects to be observed.   For any given telescope/instrument combination, the actual exposure time required will be the greatest out of the fields-limited, FOV-limited, and multiplex-limited values.  100 hours' Keck/DEIMOS exposure time would be sufficient to achieve the same signal-to-noise for $i=25.3$ objects that DEEP2 obtains at $i \sim 22.5$; at that magnitude, DEEP2 obtained secure redshifts for $\sim 75\%$ of targets.  A spectrograph with broader wavelength range or higher spectral resolution would be expected to do at least as well as this at equivalent signal-to-noise.
 
 Newman et al. 2015 tabulates the properties of a variety of current and upcoming spectrographs and estimates the total time they would require to complete such a survey.  It would take more than 10 years on Keck with DEIMOS, 5 years with DESI on the Mayall telescope, roughly 1.8 years with TMT/WFOS, just over 1 year with PFS on Subaru, or as little as 4-5 months on GMT or E-ELT, depending on instrument availability and characteristics (for instance, the specifications for the proposed MANIFEST fiber feed for GMT; if it is not available, the survey duration would need to be substantially longer than this).  If less telescope time is available, it will be necessary to either allow spectroscopic redshift failure rates to increase or to reduce the depth of the sample; it is likely that the former would have smaller impact on photometric redshift training, but that question requires further investigation.
 
-By design, this training sample would be sufficient to meet LSST calibration requirements if spectroscopic redshift failure rates of order $\sim 0.1\%$ could be achieved.  However, based on past experience that is far from a sure thing, so we require other spectroscopy for calibrating photometric redshifts.  
+By design, this training sample would be sufficient to meet LSST calibration requirements if spectroscopic redshift failure rates of order $\sim 0.1\%$ could be achieved.  However, based on past experience that is far from a sure thing, so we require other spectroscopy for calibrating photometric redshifts.
 
 We note that the results of this survey -- a set of galaxies spanning the full range of galaxy properties down to the LSST magnitude limit with a maximal amount of spectroscopic information -- will enable a wide variety of galaxy evolution science going well beyond just the training of photometric redshifts.  A number of applications for such a sample are discussed in Chapter XYZ.
 
@@ -134,15 +135,11 @@ We note that the results of this survey -- a set of galaxies spanning the full r
 
 As described in Newman et al. 2015,  cross-correlation calibration of photometric redshifts for LSST should require spectroscopy of a minimum of $\sim 5 \times 10^4$ objects over multiple independent $>100$ square degree fields, with coverage of the full redshift range of the objects whose photometric redshifts will be calibrated (for LSST dark energy samples, this is essentially $0<z<3$).  Such a sample should be available via overlap between LSST and planned baryon acoustic oscillation experiments.  Those projects are optimized by targeting the brightest galaxies at a given redshift over the broadest redshift range and total sky area possible; this matches the needs for cross-correlation measurements well.  For photometric redshift calibration, all redshifts used must be highly secure ($>$99\% probability of being correct); however, here incompleteness is not an issue.
 
-The DESI baryon acoustic oscillation experiment should obtain redshifts of $>\sim$30 million galaxies and QSOs over the redshift range $0 < z < 4$ over more than 14,000 square degrees of sky (INSERT REFERENCE HERE).  It is expected to have $>4000$ square degrees of overlap with LSST.   Absorption-line systems detected in DESI QSO spectra can provide even more redshifts at low z (Menard et al. 2013).  We anticipate that DESI will provide several million redshifts within the footprint of LSST.  As can be seen in Figure XYZ, DESI will allow detailed analyses of photometric redshift calibration, rendering calibration errors negligible and providing multiple cross-checks for systematics (e.g., by comparing redshift distributions re-constructed using tracers of different clustering properties, or restricting to only the most extremely secure redshifts).  
+The DESI baryon acoustic oscillation experiment should obtain redshifts of $>\sim$30 million galaxies and QSOs over the redshift range $0 < z < 4$ over more than 14,000 square degrees of sky (INSERT REFERENCE HERE).  It is expected to have $>4000$ square degrees of overlap with LSST.   Absorption-line systems detected in DESI QSO spectra can provide even more redshifts at low z (Menard et al. 2013).  We anticipate that DESI will provide several million redshifts within the footprint of LSST.  As can be seen in Figure XYZ, DESI will allow detailed analyses of photometric redshift calibration, rendering calibration errors negligible and providing multiple cross-checks for systematics (e.g., by comparing redshift distributions re-constructed using tracers of different clustering properties, or restricting to only the most extremely secure redshifts).
 
 However, one potential concern is that the DESI survey will cover only the northern portion of the LSST sky, which LSST will tend to observe at relatively high airmass; as a result, photometric redshift performance may not be the same there as elsewhere in the LSST footprint, which could yield a miscalibration when applied to LSST as a whole.  This risk can be mitigated by obtaining DESI-like spectroscopy in the south.  There are plans to conduct a DESI-like survey with the 4MOST telescope that would fulfill this need well.  If this does not happen, it would be extremely valuable to have access to a DESI-like spectrograph (with wide field of view, $\sim 5000\times$ multiplexing, full optical coverage, sufficient resolution to split [OII], and a $\sim 4m$ diameter telescope aperture) in the Southern hemisphere.
 
-
-
-
-%
-%NOAO guidelines: 
+%NOAO guidelines:
 %The review panel looks to this section to find out about the overall
 %strategy of your observational program.  Why do you need the telescopes
 %and instruments you request? How are your targets selected?
@@ -152,9 +149,10 @@ However, one potential concern is that the DESI survey will cover only the north
 %your scientific goals (and why), and why are your
 %observations likely to be better than previous work in the field?
 
-
+% ----------------------------------------------------------------------
 
 \section{Summary of Capabilities Required}
+\label{sec:photoz_summary}
 
 {\bf Training: Highly-multiplexed Multi-object Spectroscopy on Large Telescopes}: For training photometric redshifts, it is desirable to have an optical or optical + near-infrared multi-object spectrograph which maximizes all of spectroscopic coverage, multiplexing, field-of-view, and telescope aperture, with modestly high resolution in the red/near-IR.  Minimum requirements to maximize observation efficiency are:
 
@@ -164,10 +162,11 @@ $\bullet$ Resolution: R$\sim 4000$ in the red (R$\sim 6000$ preferable); and
 
 $\bullet$ Field of view: $>\sim$20 arcmin diameter ($>$1 degree diameter preferable).
 
-Multiplexing and telescope aperture should then be made as large as practical.  In particular, for most instruments with sub-degree fields of view, the product of multiplexing and telescope area will determine the total observing time needed to assemble a photometric training sample, so this product should be maximized.  
+Multiplexing and telescope aperture should then be made as large as practical.  In particular, for most instruments with sub-degree fields of view, the product of multiplexing and telescope area will determine the total observing time needed to assemble a photometric training sample, so this product should be maximized.
 
 {\bf Calibration: Wide-field, Massively-Multiplexed Spectroscopy}: If a DESI-like sample is not available over the southern portion of the LSST footprint, it will be necessary to either move DESI to the South or develop a comparable instrument at the Blanco or an equivalent telescope (with wide field of view, $\sim 2000--5000\times$ multiplexing, coverage of $\sim 4000--10,000$ Angstroms, and sufficient resolution to split the [OII] doublet, $R>\sim 4000$).  In any event, consideration will need to be given to how external spectroscopic resources should be integrated with LSST data; see Chapter \ref{sec:datacomp} for details.
 
+% ----------------------------------------------------------------------
 
 \section{Other Science Enabled by These Capabilities}
 
@@ -192,17 +191,14 @@ Multiplexing and telescope aperture should then be made as large as practical.  
 
 \input{wl}
 
-%C) Strong lensing: Monitoring, spectroscopy, positions (incl. IFU spectroscopy, monitoring of lens solution for supernovae, high resolution imaging follow-up with ELTs, spectroscopy to enable combined SL/WL analysis of clusters)
-% PM, AB, WD, TT?, EL with input from the DESC SL WG
-
 \input{clusters}
 
 \subsection{The Impact of Ambiguous Blending on Photometric Redshifts}
 
 Approximately 14\% of the objects detected in the LSST survey will be ambiguous blends of two or more galaxies (Dawson et al. 2016); that is, galaxies with separations $\lesssim$ their FWHM, such that they cannot reliably be identified as blended and are detected as a single object. These ambiguous blends pose a challenge and potential source of systematics for photometric redshift algorithms which assume that all objects are single, isolated galaxies. By definition these ambiguous blends will be undetectable in ground-based imaging, so it is likely that the best strategy for mitigation will be calibration of the effects.  These objects should have little effect on cosmological measurements from strong lensing, supernovae or LSS, but could have larger impact on weak lensing measurements (including cluster mass calibrations).
 
-The impact can be predicted given knowledge of galaxy redshift distributions, colors, sizes, and clustering; the photometric redshift training survey described in \S \ref{sec:design} would provide much of the information needed to develop suitable models, but additional spectroscopy can help to test them.  One option is to use overlapping space-based imaging, ideally in both field and cluster environments, to identify a sample of ambiguous blends and observe those galaxies
-with a high-multiplexing, medium resolution multi-object spectrograph, obtaining sufficient signal-to-noise that redshifts of both components of the blend can be identified.  If high-resolution preimaging is available, this could be done simultaneously with the photometric redshift training samples described in \S \ref{sec:design}; the blends could be withheld from sets used to train models, and then used to test them.  
+The impact can be predicted given knowledge of galaxy redshift distributions, colors, sizes, and clustering; the photometric redshift training survey described in Section~\ref{sec:photoz_design} would provide much of the information needed to develop suitable models, but additional spectroscopy can help to test them.  One option is to use overlapping space-based imaging, ideally in both field and cluster environments, to identify a sample of ambiguous blends and observe those galaxies
+with a high-multiplexing, medium resolution multi-object spectrograph, obtaining sufficient signal-to-noise that redshifts of both components of the blend can be identified.  If high-resolution preimaging is available, this could be done simultaneously with the photometric redshift training samples described in Section~\ref{sec:photoz_design}; the blends could be withheld from sets used to train models, and then used to test them.
 
 %
 %{\em Note: ultimately, would need some estimate of sample size.  I'll admit that I'm not convinced a spectroscopic campaign focused on blends would be very efficient nor provide a better way of characterizing the effect than predicting it from clustering measurements + redshift distributions + space-based imaging (since the key question is what fractions of blends are same-redshift vs. different-z). --JAN}

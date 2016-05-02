@@ -1,75 +1,95 @@
 % ======================================================================
 
-\section{Strong Lensing}
-\label{sec:sl}
+% \section{Strong Lensing}
+% \label{sec:sl}
 
-Our ability to do cosmography with either time delay lenses or multiple 
+\label{chap:sl}
+
+{\it Phil Marshall, Tommaso Treu, Curtis McCully and Eric Linder}
+
+
+Our ability to do cosmography with either time delay lenses or multiple
 source plane ``compound'' lenses is dependent on follow-up observations
 to constrain the mass models: without these data, strong lenses will not
-be able to be used for precision cosmology. In this section we outline what will be 
+be able to be used for precision cosmology. In this section we outline what will be
 required in order for us to be able to exploit the LSST strong lens sample.
 
 % ----------------------------------------------------------------------
 
-\subsection{Time Delay and Compound Lens Cosmography: High Precision Galaxy Mass Models from High Resolution Imaging and Spectroscopy}
-{\it Phil Marshall, Tommaso Treu and others}
+% \subsection{Time Delay and Compound Lens Cosmography: High Precision Galaxy Mass Models from High Resolution Imaging and Spectroscopy}
+\section{Scientific Justification}
+\label{sec:sl_just}
 
 The primary route to cosmology from strong lensing is time delays in
 galaxy-scale lensed quasars and supernovae. Galaxy scale compound lenses
 (i.e. systems with two sources at different redshifts) have also been
 suggested. We expect to be able to compile samples of several hundred lensed AGN
-and lensed SN systems with accurately measured LSST time delays (Liao et al 2015), 
+and lensed SN systems with accurately measured LSST time delays (Liao et al 2015),
 and dozens of compound lens systems (Collett 2015).
+
+% ----------------------------------------------------------------------
+
+\section{Experimental Design}
+\label{sec:sl_design}
+
+We now outline the proposed program's technology needs, introducing the
+observations for each phase and describing the  instrumentation needed.
+
+% ----------------------------------------------------------------------
+
+\subsection{Detailed Mass Modeling to Enable Accurate Distance Determination}
 
 To be useful as probes of cosmological distances, galaxy scale lenses
 need very well constrained mass models. These constraints will come from
 two sources:
 \begin{enumerate}
-\item High resolution imaging of the Einstein rings due to the source AGN
-or SN host galaxy. Targeted snapshot (i.e.\ 200--2000 second exposure time) imaging
-observations in the near infra-red with either JWST or a GSMT
-can provide the Einstein ring constraints needed to turn
-each of these systems into a  5\% precision distance (Meng et al 2015).
-\item Spatially resolved spectroscopy of the lens
-galaxy, enabling measurement of the stellar velocity dispersion field to
-break the degeneracy between the predicted time delays and the lens mass
-density profile.
+    \item High resolution imaging of the Einstein rings due to the
+    source AGN or SN host galaxy. Targeted snapshot (i.e.\ 200--2000
+    second exposure time) imaging observations in the near infra-red
+    with either JWST or a GSMT can provide the Einstein ring constraints
+    needed to turn each of these systems into a  5\% precision distance
+    (Meng et al 2015).
+    \item Spatially resolved spectroscopy of the lens galaxy, enabling
+    measurement of the stellar velocity dispersion field to break the
+    degeneracy between the predicted time delays and the lens mass
+    density profile, calibrating each system to enable it to provide a
+    4\% accurate distance. We will need capabilities such as those
+    currently available on Keck, and that will be available on all three
+    of GMT, TMT and E-ELT (albeit with somewhat different technical
+    specifications).
 \end{enumerate}
-These can be obtained simultaneously with integral field units: we will
-need capabilities such as those currently available on Keck, and that
-will be available on all three of GMT, TMT and E-ELT 
-(albeit with somewhat different technical specifications).
 
-However, before this we will need optical spectroscopy to get the redshifts
-of the deflector and source galaxies. This can be done at relatively low
-resolution, but the wider the wavelength range the better: we will need
-3500--10000 Angstroms in the optical, and maybe a triplespec-like instrument covering the JHK
-bands in the IR. Some redshifts may come from overlapping
-spectroscopic survey observations, with the systems appearing as
-composite absorption and emission line galaxy spectral components. Some
-of the targeted spectroscopy could be done at 10-m class facilities.
+However, before this we will need optical spectroscopy to get the
+redshifts of the deflector and source galaxies. This can be done at
+relatively low resolution, but the wider the wavelength range the
+better: we will need 3500--10000 Angstroms in the optical, and maybe a
+triplespec-like instrument covering the JHK bands in the IR. Some
+redshifts may come from overlapping spectroscopic survey observations,
+with the systems appearing as composite absorption and emission line
+galaxy spectral components. Some of the targeted spectroscopy could be
+done at 10-m class facilities.
 
 After the redshift has been determined, AO-assisted integral field
-spectroscopy would be best for providing the lens mass model
-constraints (from both the Einstein rings and the spatially resolved
-spectroscopy). We will need something like a 4"x4" field of view, with
-spectral resolution R~4000--5000 over a wavelength range of 1.0--2.2 microns
-(to cover CaT at rest frame  8800--9000A, or CO at 1.5-1.6$\mu$m). IRIS
-on TMT would provide this capability, for example. OSIRIS on Keck is the current
-best option, even though the field of view is a bit too small and the
-current AO system at Keck has relatively low strehl at 1$\mu$m. The Keck
-system will be upgraded, but TMT should be much better. 
-Similar data would be needed for the compound lenses.
+spectroscopy would be best for providing the lens mass model constraints
+(from both the Einstein rings and the spatially resolved spectroscopy).
+We will need something like a 4"x4" field of view, with spectral
+resolution R~4000--5000 over a wavelength range of 1.0--2.2 microns (to
+cover CaT at rest frame  8800--9000A, or CO at 1.5-1.6$\mu$m). IRIS on
+TMT would provide this capability, for example. OSIRIS on Keck is the
+current best option, even though the field of view is a bit too small
+and the current AO system at Keck has relatively low strehl at 1$\mu$m.
+The Keck system will be upgraded, but TMT should be much better. Similar
+data would be needed for the compound lenses.
 
 While these targeted observations would be narrow field, they would
-enable some considerable ancillary science, notably  in the areas of
+enable some considerable ancillary science, notably in the areas of
 dark matter substructure (from perturbations to the imaged rings) and
 AGN host galaxy structure.
 
+
 % ----------------------------------------------------------------------
 
-\subsection{Time Delay Cosmography: Additional Monitoring of Selected Time Delay Systems}
-{\it Phil Marshall, Curtis McCully, Eric Linder and others}
+\subsection{Additional Monitoring of Selected Time Delay Systems}
 
 If LSST's cadence is insufficient to provide Stage IV-accurate
 measurements of lens time delays, we may need to supplement the light
@@ -79,114 +99,222 @@ monitoring will require dedicated scheduled imaging effort on 4--10m
 class telescopes. For AGN, several year campaigns, with
 weekly cadence interleaved with the LSST observations, would be needed.
 
-Given the observational demands,
-smaller scale monitoring campaigns at these depths may well be
-both desirable as well as feasible. High value small sub-samples might include
-lensed type Ia supernovae, and variable sources (i.e.\ AGN or
-supernovae) in compound lenses.
-The latter may only occur in a handful of systems, but
-these highly constrained systems would make valuable targets. Another
-possibility currently being explored by Courbin et al, McCully et al,
-and others is to carry out dedicated high cadence monitoring of lensed
-AGN, using the very short time scale variability to probe the time delay
-more efficiently. If this technique can be shown to work, it could
-reduce the demands on the monitoring network considerably.
+Given the observational demands, smaller scale monitoring campaigns at
+these depths may well be both desirable as well as feasible. High value
+small sub-samples might include lensed type Ia supernovae, and variable
+sources (i.e.\ AGN or supernovae) in compound lenses. The latter may
+only occur in a handful of systems, but these highly constrained systems
+would make valuable targets. Another possibility currently being
+explored by Courbin et al, McCully et al, and others is to carry out
+dedicated high cadence monitoring of lensed AGN, using the very short
+time scale variability to probe the time delay more efficiently. If this
+technique can be shown to work, it could reduce the demands on the
+monitoring network considerably.
 
 % ----------------------------------------------------------------------
 
-\subsection{Time Delay Cosmography: Multi-object Spectroscopy to Improve the Fidelity of our Lens Environment and Line of Sight Characterization}
-{\it Curtis McCully, Adam Bolton, Phil Marshall and others}
+\subsection{Multi-object Spectroscopy to Improve
+the Fidelity of our Lens Environment and Line of Sight Characterization}
 
-To achieve stage IV accuracy on cosmology, mass in the immediate environment of the lens and along the line of sight cannot be ignored. LSST will provide photometric redshifts and stellar masses of all
-galaxies in the fields of each cosmographic lens. With this information, following the methodology of Wong et al. 2011 and McCully et al. 2016, we can remove the majority of the bias due to external convergence. However, for some lens fields, this may not be enough; if there are significant mass concentrations (e.g. clusters or groups), spectroscopy may be required.  
+To achieve stage IV accuracy on cosmology, mass in the immediate
+environment of the lens and along the line of sight cannot be ignored.
+LSST will provide photometric redshifts and stellar masses of all
+galaxies in the fields of each cosmographic lens. With this information,
+following the methodology of Wong et al. 2011 and McCully et al. 2016,
+we can remove the majority of the bias due to external convergence.
+However, for some lens fields, this may not be enough; if there are
+significant mass concentrations (e.g. clusters or groups), spectroscopy
+may be required.
 
 Multi-object spectroscopic data can provide significant improvements in
-the accuracy of forward models.
-Spectroscopic coverage of the $~5$~arcminute strong lens fields
-themselves is valuable, where many of the benefits come from the redshifts of
-massive galaxies and groups close to the line of sight. Based on mass models (that include some spectroscopy), the uncertainty on the external convergence is a few percent for an individual lens. However, spectroscopy can also provide the velocity dispersion of both the lens galaxies and galaxies in the lens environment or along the line of sight. The velocity dispersion of the main lens galaxy allows us to break the lens radial profile degeneracy, one of the key systematic uncertainties for measuring cosmology using time delay cosmography. The velocity dispersion of the environment/line of sight galaxies will allow more effective forward modeling, further reducing the residual bias in external convergence estimates by a factor of two (Collett et al. 2013). Characterization of weak lensing effects for strong lensing has similar needs to that needed to model intrinsic alignments.
+the accuracy of forward models. Spectroscopic coverage of the
+$~5$~arcminute strong lens fields themselves is valuable, where many of
+the benefits come from the redshifts of massive galaxies and groups
+close to the line of sight. Based on mass models (that include some
+spectroscopy), the uncertainty on the external convergence is a few
+percent for an individual lens. However, spectroscopy can also provide
+the velocity dispersion of both the lens galaxies and galaxies in the
+lens environment or along the line of sight. The velocity dispersion of
+the main lens galaxy allows us to break the lens radial profile
+degeneracy, one of the key systematic uncertainties for measuring
+cosmology using time delay cosmography. The velocity dispersion of the
+environment/line of sight galaxies will allow more effective forward
+modeling, further reducing the residual bias in external convergence
+estimates by a factor of two (Collett et al. 2013). Characterization of
+weak lensing effects for strong lensing has similar needs to that needed
+to model intrinsic alignments.
 
-
-DESI data is potentially valuable in the overlap region with LSST. McCully et al. 2016 provide a method to rank order the contribution of individual galaxies in the environment and along the line of sight. The $\sim 30$ most important galaxies need to be modeled in full, making them prime targets for spectroscopy, while the rest of the galaxies can be approximated as with only shear and convergence, and likely only require photometric data. By selecting only the most important galaxies for spectroscopy, each lens field should only need a single pointing from a Multi-object spectrograph, e.g. DESI, though fiber collisions may necessitate multiple pointings. Spectroscopic training data for the photometric redshifts and calibration fields could provide further coverage.
-
+DESI data is potentially valuable in the overlap region with LSST.
+McCully et al. 2016 provide a method to rank order the contribution of
+individual galaxies in the environment and along the line of sight. The
+$\sim 30$ most important galaxies need to be modeled in full, making
+them prime targets for spectroscopy, while the rest of the galaxies can
+be approximated as with only shear and convergence, and likely only
+require photometric data. By selecting only the most important galaxies
+for spectroscopy, each lens field should only need a single pointing
+from a Multi-object spectrograph, e.g. DESI, though fiber collisions may
+necessitate multiple pointings. Spectroscopic training data for the
+photometric redshifts and calibration fields could provide further
+coverage.
 
 % ----------------------------------------------------------------------
 
-\subsection{Cluster Mass Function: Spectroscopic Surveying in Cluster Fields}
-\label{sec:sl:clusters}
-{\it Will Dawson and others}
+\section{Summary of Capabilities Required}
+\label{sec:sl_summary}
 
-{\it Note from Will: While I have done a fair amount of cluster weak lensing and
-spectroscopy work, this has been focused on dark matter science, I am not
-actually an expert in cluster mass function cosmological constraints. That said
-I have drafted some text that I hope will describe the methods and needed
-capability (or capabilities) in enough detail that someone could determine
-whether they overlap with other needs. I am also includeing all spectroscopic
-cluster studies and those limited to strong lensing; we can move the text later
-if we like.}
+{\bf Mass Modeling: Lens and Source Redshifts}: introduction.
 
-{\it Basic Premis}: Cosmology is sensitive to the abundance of rare massive
-clusters observed out to and beyond $z\sim 1$. For example, Takada \& Spergel
-(2014) have shown that a characterization of the most massive clusters can
-improve the constraining power of future cosmic shear surveys (e.g., LSST, and
-WFIRST) by approximately a factor of two, provided the cluster masses and
-redshifts are accurately constrained.
+$\bullet$ Spectral coverage:
 
-Spectroscopy of cluster galaxies can improve LSST cluster mass function
-constraints in a number of ways:
-\begin{itemize}
-  \item {\it Redshifts of multiply imaged background galaxies}: Combined strong
-  and weak lensing measurements of clusters can improve both the cluster mass
-  and concentration constraints by approximately a factor of two (Umetsu et
-  al.~2010). So it is possible to improve the LSST cluster weak lensing
-  constraints by combining strong lensing measurement of the strongly lensed
-  background galaxies (preseumably identified from space-based observations,
-  such as HST or WFIRST, but potentially from LSST alone). However, redshifts of
-  the multiply lensed galaxies are needed in order to properly constrain the
-  cluster mass distribution. There has been some work recently by Keren Sharon's
-  group on the number of multiply lensed galaxy redshifts that are necessary for
-  a given lens model accuracy. Most of the multiply lensed galaxies are faint $R
-  \gtrsim 23$ and require large diameter telescopes.
-  \item {\it Accurate cluster redshifts}: For cosmological constraints it is
-  necessary to know both the mass and redshift of the clusters. While it is
-  possible to obtain better than average photometric redshifts of clusters due
-  to their being hundreds to thousands of galaxies to beat down the Poission
-  photo-z noise and the tight red sequence color relation, constaints can be
-  improved (how much) with accurate redshifts from spectroscopy. It is possible
-  to accomplish this with one to a few redshifts of the brightest cluster
-  galaxies. The instrument requirements are pretty relaxed for this science
-  since on only needs a few redshifts per pointing of rather bright galaxies.
-  \item {\it Cluster galaxy velocities as a probe of the cluster potential}: The
-  spectroscopic caustic method (Kaiser 1987; Regos \& Geller 1989) is the only
-  other successful stand alone method, in addition to weak lenising, of probing
-  the mass density profile to comparably large cluster radii. This is important
-  since joint CMB+SZE constraints indicate that SZE-derived {\em Planck} masses
-  underestimate the true $M_{500}$ masses by $b=1-\langle
-  M_{Planck}/M_\mathrm{true}\rangle\sim 43\%$ $\sim43\%$ --- far from the $\sim
-  20\%$ expected due to deviations from the influence of feedback, non-thermal
-  pressure, and cluster shapes (Battaglia+ 2012). Of even greater concern is
-  that according to WL studies (Sereno \& Ettori 2015), the bias appears to vary
-  with mass. SZE mass estimates are calibrated in part based on X-ray
-  temperatures with spectroscopy that is only reliable out to $r_{2500}\sim
-  0.25r_\mathrm{vir}$. Recent WL analyses of the {\em Planck} sample, that probe
-  the mass distribution to larger radii, yield $1-\langle
-  M_{Planck}/M_\mathrm{WL}\rangle\sim 30\%$ at the $\sim 10\%$ uncertainty level
-  (von der Linden+ 2014; Hoekstra+ 2015), somewhat relaxing the {\em Planck}
-  tension. Hinting at the importance of having probes of the cluster potential
-  out to large radii ($\sim$ the virial radius). To realize this science would
-  require more than a hundred spectroscopic redshifts per cluster, with a
-  moderate resolution spectrograph. A highly multiplexed moderate resolution
-  spectrograph, that can simulatinously target objects within $\lesssim
-  5$\,arcsecons of one another (due to the dense cluster environment). I (wd) am
-  not sure how many clusters would need to be surveyed to make a significant
-  improvement to planned LSST cluster cosmology.
-  \item {\it Redshift space distortions}: This is a probe of modified gravity,
-  and similar to the spectroscopic caustic method requires hundreds of
-  spectroscpic redshifts of cluster galaxies. The spectroscopic demands are the
-  same as the caustic method as well. I (wd) am not sure how many clusters we
-  would need to make this measurement for.
-\end{itemize}
+$\bullet$ Spectral resolution:
 
-\ldots
+$\bullet$ Field of view:
 
+$\bullet$ Proposed facilities:
+
+$\bullet$ Total time required:
+
+Notes.
+
+
+{\bf Mass Modeling: high resolution Einstein ring imaging}: introduction.
+
+$\bullet$ Spectral coverage:
+
+$\bullet$ Spectral resolution:
+
+$\bullet$ Field of view:
+
+$\bullet$ Proposed facilities:
+
+$\bullet$ Total time required:
+
+Notes.
+
+
+{\bf Mass Modeling: Spatially-resolved
+Spectroscopy on Extremely Large Telescopes}: introduction.
+
+$\bullet$ Spectral coverage:
+
+$\bullet$ Spectral Resolution:
+
+$\bullet$ Field of view:
+
+$\bullet$ Proposed facilities:
+
+$\bullet$ Total time required:
+
+Notes.
+
+
+{\bf Additional Monitoring}: introduction.
+
+$\bullet$ Spectral coverage:
+
+$\bullet$ Spectral Resolution:
+
+$\bullet$ Field of view:
+
+$\bullet$ Proposed facilities:
+
+$\bullet$ Total time required:
+
+Notes.
+
+
+{\bf Environment characterization}: introduction.
+
+$\bullet$ Spectral coverage:
+
+$\bullet$ Spectral Resolution:
+
+$\bullet$ Field of view:
+
+$\bullet$ Proposed facilities:
+
+$\bullet$ Total time required:
+
+Notes.
+
+
+% % ----------------------------------------------------------------------
+%
+% \subsection{Cluster Mass Function: Spectroscopic Surveying in Cluster Fields}
+% \label{sec:sl:clusters}
+% {\it Will Dawson and others}
+%
+% {\it Note from Will: While I have done a fair amount of cluster weak lensing and
+% spectroscopy work, this has been focused on dark matter science, I am not
+% actually an expert in cluster mass function cosmological constraints. That said
+% I have drafted some text that I hope will describe the methods and needed
+% capability (or capabilities) in enough detail that someone could determine
+% whether they overlap with other needs. I am also includeing all spectroscopic
+% cluster studies and those limited to strong lensing; we can move the text later
+% if we like.}
+%
+% {\it Basic Premis}: Cosmology is sensitive to the abundance of rare massive
+% clusters observed out to and beyond $z\sim 1$. For example, Takada \& Spergel
+% (2014) have shown that a characterization of the most massive clusters can
+% improve the constraining power of future cosmic shear surveys (e.g., LSST, and
+% WFIRST) by approximately a factor of two, provided the cluster masses and
+% redshifts are accurately constrained.
+%
+% Spectroscopy of cluster galaxies can improve LSST cluster mass function
+% constraints in a number of ways:
+% \begin{itemize}
+%   \item {\it Redshifts of multiply imaged background galaxies}: Combined strong
+%   and weak lensing measurements of clusters can improve both the cluster mass
+%   and concentration constraints by approximately a factor of two (Umetsu et
+%   al.~2010). So it is possible to improve the LSST cluster weak lensing
+%   constraints by combining strong lensing measurement of the strongly lensed
+%   background galaxies (preseumably identified from space-based observations,
+%   such as HST or WFIRST, but potentially from LSST alone). However, redshifts of
+%   the multiply lensed galaxies are needed in order to properly constrain the
+%   cluster mass distribution. There has been some work recently by Keren Sharon's
+%   group on the number of multiply lensed galaxy redshifts that are necessary for
+%   a given lens model accuracy. Most of the multiply lensed galaxies are faint $R
+%   \gtrsim 23$ and require large diameter telescopes.
+%   \item {\it Accurate cluster redshifts}: For cosmological constraints it is
+%   necessary to know both the mass and redshift of the clusters. While it is
+%   possible to obtain better than average photometric redshifts of clusters due
+%   to their being hundreds to thousands of galaxies to beat down the Poission
+%   photo-z noise and the tight red sequence color relation, constaints can be
+%   improved (how much) with accurate redshifts from spectroscopy. It is possible
+%   to accomplish this with one to a few redshifts of the brightest cluster
+%   galaxies. The instrument requirements are pretty relaxed for this science
+%   since on only needs a few redshifts per pointing of rather bright galaxies.
+%   \item {\it Cluster galaxy velocities as a probe of the cluster potential}: The
+%   spectroscopic caustic method (Kaiser 1987; Regos \& Geller 1989) is the only
+%   other successful stand alone method, in addition to weak lenising, of probing
+%   the mass density profile to comparably large cluster radii. This is important
+%   since joint CMB+SZE constraints indicate that SZE-derived {\em Planck} masses
+%   underestimate the true $M_{500}$ masses by $b=1-\langle
+%   M_{Planck}/M_\mathrm{true}\rangle\sim 43\%$ $\sim43\%$ --- far from the $\sim
+%   20\%$ expected due to deviations from the influence of feedback, non-thermal
+%   pressure, and cluster shapes (Battaglia+ 2012). Of even greater concern is
+%   that according to WL studies (Sereno \& Ettori 2015), the bias appears to vary
+%   with mass. SZE mass estimates are calibrated in part based on X-ray
+%   temperatures with spectroscopy that is only reliable out to $r_{2500}\sim
+%   0.25r_\mathrm{vir}$. Recent WL analyses of the {\em Planck} sample, that probe
+%   the mass distribution to larger radii, yield $1-\langle
+%   M_{Planck}/M_\mathrm{WL}\rangle\sim 30\%$ at the $\sim 10\%$ uncertainty level
+%   (von der Linden+ 2014; Hoekstra+ 2015), somewhat relaxing the {\em Planck}
+%   tension. Hinting at the importance of having probes of the cluster potential
+%   out to large radii ($\sim$ the virial radius). To realize this science would
+%   require more than a hundred spectroscopic redshifts per cluster, with a
+%   moderate resolution spectrograph. A highly multiplexed moderate resolution
+%   spectrograph, that can simulatinously target objects within $\lesssim
+%   5$\,arcsecons of one another (due to the dense cluster environment). I (wd) am
+%   not sure how many clusters would need to be surveyed to make a significant
+%   improvement to planned LSST cluster cosmology.
+%   \item {\it Redshift space distortions}: This is a probe of modified gravity,
+%   and similar to the spectroscopic caustic method requires hundreds of
+%   spectroscpic redshifts of cluster galaxies. The spectroscopic demands are the
+%   same as the caustic method as well. I (wd) am not sure how many clusters we
+%   would need to make this measurement for.
+% \end{itemize}
+%
+% \ldots
+%
 % ======================================================================
