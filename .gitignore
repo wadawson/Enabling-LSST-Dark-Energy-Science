@@ -8,8 +8,9 @@
 *.toc
 *.fmt
 
-## Product:
+## Products:
 maximizing_science_dark_energy.pdf
+short_version.pdf
 
 ## Intermediate documents:
 *.dvi
