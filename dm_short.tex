@@ -1,79 +1,87 @@
-\subsection{Science Goals}
+Cosmology with the cluster mass function may become one of the most powerful probes of the cosmology in the LSST era, if cluster masses can be measured to high enough accuracy and precision (Cosmic Visions report; Krause and Eifler 2016).  Moreover, they provide avenues for probing gravity as well as the properties of dark matter.  Multi-object spectroscopy plays a major role on all of these:
 
-Describe your science goals here, as in the scientific justification of an NOAO proposal. If you have multiple science goals, you can either describe them all here, or replicate the science, technical, and capabilities sections for each goal. Just create one summary table for the entire program.  
+\begin{itemize}
+\item Photo-z uncertainties specific to cluster fields present one of the primary systematics in cluster weak-lensing analyses to anchor the absolute cluster mass calibration (Applegate et al. 2014, DESC white paper).  Galaxies along a line of sight that contains a cluster are more likely to be at the cluster redshift than would be expected based upon posterior probability distributions calculated without any reference to position.  Such modulation of the prior should depend upon both cluster redshift and mass.  Some amount of training datasets (targeting galaxies selected by their photo-z's to be behind clusters) is necessary for this work to identify (possibly unexpected) failure modes of mistaking cluster galaxies for background galaxies. FOVs of $\gtrsim 20$~arcmin are ideal for targeting cluster fields at $z_{\rm Cl}\gtrsim0.2$.  Constraints on the wavelength coverage are somewhat reduced for investigating only the cluster redshift failure mode. Accordingly, existing instruments (e.g. DEIMOS) are already well-suited for this work, especially if the large-scale photo-z training surveys are predominantly performed with larger-area, sparser spectrographs.  Training sets should target clusters over a range of redshift, acquiring ~500 background redshifts per cluster to fully characterize the accuracy of $p(z)$ distributions in cluster fields.  In addition, cross-calibration datasets can be a sensitive test for residual cluster galaxy contamination. These are easier to obtain, targeting (bright) red-sequence galaxies.  Spectroscopy of $\sim 100--300$ galaxies in each of $\sim 20--50$ clusters would be useful for this purpose.  
+\item The combination of weak lensing with dynamical mass probes (e.g., measurements of galaxy velocities within clusters) can be used to test non-GR theories of gravity, which could provide an alternative explanation for the cosmic acceleration commonly described to dark energy. The same spectroscopy used to characterize photometric redshifts around clusters can be used to measure infall velocities and hence provide constraints on the origin of cosmic acceleration, if the FOVs extend to $\gtrsim 2h^{-1}$ Mpc from the cluster centers.
+\item As the most massive collapsed structures in the Universe, the structure and evolution of clusters is sensitive to the properties of dark matter, although is it challenging to separate non-standard-DM signatures from the effects of baryonic physics (Peter et al. 2013). In merging clusters, the effects e.g. of self-interacting dark matter may be most apparent.  LSST (with eROSITA) will identify hundreds to thousands of (major) mergers, but kinematic information is critical to reconstruct the merger histories and geometries. Instruments with $\sim 15-20$~arcmin FOVs and high-multiplexing capabilities are again well matched. {\bf Ask Will to write, and check with Annika.  Should also include bulleticity?}
+\end{itemize}
 
-%NOAO guidelines:
+%\subsection{Science Goals}
 %
-%The scientific justification should explain the overall goals of
-%your program in the context of your field, as well as the importance
-%of your program to astronomy.
-%Writing a good scientific justification is an art.  It takes
-%skill and practice.  And it requires a good scientific idea.
-%This last you must supply but a few general guidelines
-%about proposal writing might still be helpful...
+%Describe your science goals here, as in the scientific justification of an NOAO proposal. If you have multiple science goals, you can either describe them all here, or replicate the science, technical, and capabilities sections for each goal. Just create one summary table for the entire program.  
 %
-%\begin{itemize}
-%\item
-%State succinctly and clearly the problem you are trying to solve
-%and the progress that will be made toward doing so if the proposed
-%observations are successful.  If the review panel members have to work hard
-%even to understand what you want to do, they are unlikely to be
-%sympathetic to your proposal.
+%%NOAO guidelines:
+%%
+%%The scientific justification should explain the overall goals of
+%%your program in the context of your field, as well as the importance
+%%of your program to astronomy.
+%%Writing a good scientific justification is an art.  It takes
+%%skill and practice.  And it requires a good scientific idea.
+%%This last you must supply but a few general guidelines
+%%about proposal writing might still be helpful...
+%%
+%%\begin{itemize}
+%%\item
+%%State succinctly and clearly the problem you are trying to solve
+%%and the progress that will be made toward doing so if the proposed
+%%observations are successful.  If the review panel members have to work hard
+%%even to understand what you want to do, they are unlikely to be
+%%sympathetic to your proposal.
+%%
+%%\item
+%%Explain clearly why the project is important and how it
+%%relates to the broad context and important issues in your field.
+%%Many proposals focus too tightly on a specific observational
+%%goal (e.g. ``measure the velocity dispersion of this cluster of galaxies'')
+%%without explaining why it is important or how it relates to a
+%%significant question about the Universe.
+%%
+%%\item
+%%Be specific.  If your observations will ``constrain theoretical
+%%models,'' then discuss what will be constrained and why those
+%%constraints matter.  Make sure the review panel understands exactly why
+%%the observations you propose will make a difference in your field,
+%%and exactly how the observations will refine or
+%%require changes in the theory.
+%%
+%%\item
+%%Keep it simple.  Try to focus on the central idea of your proposal.
+%%Complex arguments are hard to explain and hard for the panel members to follow.
+%%Distracting tangential arguments obscure the theme of your proposal.
+%%
+%%\item
+%%Include a figure to help explain what you want to do.  Sample
+%%data or model predictions shown in a figure often help clarify
+%%complex arguments for the panel members.
+%%
+%%\item
+%%Keep it short.  Never exceed a page for the text of the scientific
+%%justification, and never reduce the font size.  It may even help to
+%%be a little under a page, and increase the font size a little!
+%%Organize your presentation with paragraphs, headings, and bullets
+%%so it is easy to read.
 %
-%\item
-%Explain clearly why the project is important and how it
-%relates to the broad context and important issues in your field.
-%Many proposals focus too tightly on a specific observational
-%goal (e.g. ``measure the velocity dispersion of this cluster of galaxies'')
-%without explaining why it is important or how it relates to a
-%significant question about the Universe.
 %
-%\item
-%Be specific.  If your observations will ``constrain theoretical
-%models,'' then discuss what will be constrained and why those
-%constraints matter.  Make sure the review panel understands exactly why
-%the observations you propose will make a difference in your field,
-%and exactly how the observations will refine or
-%require changes in the theory.
 %
-%\item
-%Keep it simple.  Try to focus on the central idea of your proposal.
-%Complex arguments are hard to explain and hard for the panel members to follow.
-%Distracting tangential arguments obscure the theme of your proposal.
+%\subsection{Technical Description }
 %
-%\item
-%Include a figure to help explain what you want to do.  Sample
-%data or model predictions shown in a figure often help clarify
-%complex arguments for the panel members.
+%Give a technical description of your program, describing e.g., sample size and properties, justification of spectral or spatial resolution, wavelength, target density, etc.
 %
-%\item
-%Keep it short.  Never exceed a page for the text of the scientific
-%justification, and never reduce the font size.  It may even help to
-%be a little under a page, and increase the font size a little!
-%Organize your presentation with paragraphs, headings, and bullets
-%so it is easy to read.
-
-
-
-\subsection{Technical Description }
-
-Give a technical description of your program, describing e.g., sample size and properties, justification of spectral or spatial resolution, wavelength, target density, etc.
-
-
-%NOAO guidelines:
-%The review panel looks to this section to find out about the overall
-%strategy of your observational program.  Why do you need the telescopes
-%and instruments you request? How are your targets selected?
-%Why do you need spectroscopy or imaging, and what measurements will
-%you make from the data?  Why is your approach to be preferred over
-%some other approach, what must the minimum sample size be to achieve
-%your scientific goals (and why), and why are your
-%observations likely to be better than previous work in the field?
-
-
-
-\subsection{Needed Capabilities and Estimate of Demand}
-
-Describe the needed capabilities and demand (e.g., estimate of observing time) that flow down from the science and technical considerations. If applicable, describe the time critical nature of the required capabilities (do you need to have the capabilities while LSST is carrying out the survey or can you do the follow up later?) 
+%
+%%NOAO guidelines:
+%%The review panel looks to this section to find out about the overall
+%%strategy of your observational program.  Why do you need the telescopes
+%%and instruments you request? How are your targets selected?
+%%Why do you need spectroscopy or imaging, and what measurements will
+%%you make from the data?  Why is your approach to be preferred over
+%%some other approach, what must the minimum sample size be to achieve
+%%your scientific goals (and why), and why are your
+%%observations likely to be better than previous work in the field?
+%
+%
+%
+%\subsection{Needed Capabilities and Estimate of Demand}
+%
+%Describe the needed capabilities and demand (e.g., estimate of observing time) that flow down from the science and technical considerations. If applicable, describe the time critical nature of the required capabilities (do you need to have the capabilities while LSST is carrying out the survey or can you do the follow up later?) 
 
 
