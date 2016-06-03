@@ -1,6 +1,20 @@
+
+\label{sec:sl}
+
+{\it Phil Marshall, Tommaso Treu, Curtis McCully and Eric Linder}
+
+Our ability to do cosmography with either time delay lenses or multiple
+source plane ``compound'' lenses is dependent on follow-up observations
+to constrain the mass models: without these data, strong lenses will not
+be able to be used for precision cosmology. In this section we outline what will be
+required in order for us to be able to exploit the LSST strong lens sample.
+
+
+% ----------------------------------------------------------------------
+
 \subsection{Science Goals}
 
-Describe your science goals here, as in the scientific justification of an NOAO proposal. If you have multiple science goals, you can either describe them all here, or replicate the science, technical, and capabilities sections for each goal. Just create one summary table for the entire program.  
+% {\it Describe your science goals here, as in the scientific justification of an NOAO proposal. If you have multiple science goals, you can either describe them all here, or replicate the science, technical, and capabilities sections for each goal. Just create one summary table for the entire program.}
 
 %NOAO guidelines:
 %
@@ -53,11 +67,45 @@ Describe your science goals here, as in the scientific justification of an NOAO 
 %Organize your presentation with paragraphs, headings, and bullets
 %so it is easy to read.
 
+\label{sec:sl_just}
 
+The primary route to cosmology from strong lensing is time delays in
+galaxy-scale lensed quasars and supernovae. Galaxy scale compound lenses
+(i.e. systems with two sources at different redshifts) have also been
+suggested. We expect to be able to compile samples of several hundred lensed AGN
+and lensed SN systems with accurately measured LSST time delays (Liao et al 2015),
+and dozens of compound lens systems (Collett 2015).
+
+Figure~\ref{fig:sl_forecast}, reproduced from Coe \& Moustakas (2009) \cite{Coe+Moustakas2009}
+shows approximate forecast cosmological  parameter constraints from a
+sample of 100 lenses, where each provides a  time delay distance
+accurate to 5\%. Two lenses to date have been  shown to provide 6\%
+distance precision (Suyu et al 2014): this was only  achievable with a
+combination of deep, high resolution imaging from HST (to enable the
+Einstein rings to be modeled), and high fidelity spectra from 10-m class
+telescopes yielding lens velocity dispersions that anchor the mass
+model. Without these follow-up data, the mass models can only be
+constrained to 20--30\% accuracy: {\it for this cosmological probe, the
+optical and infrared follow-up observations are essential.} LSST will
+simply provide the opportunity, via a large sample of accurately
+measured time delays).
+
+\begin{figure*}[!t]
+    \centering\includegraphics[width=0.9\linewidth]{figs/Coe+Moustakas2009_Figure14.pdf}
+    \caption{LSST time delay lens cosmological parameter forecasts (blue)
+    compared to optimistic forecasts from the Dark
+    Energy Task Force (Albrecht et al 2006) for 4 other Stage IV probes.
+    A sample of 100 lenses is assumed, each one
+    providing a 5\% accurate time delay distance. Figure reproduced from
+    Coe \& Moustakas (2009) \citet{Coe+Moustakas2009}.}
+    \label{fig:sl_forecast}
+\end{figure*}
+
+% ----------------------------------------------------------------------
 
 \subsection{Technical Description }
 
-Give a technical description of your program, describing e.g., sample size and properties, justification of spectral or spatial resolution, wavelength, target density, etc.
+% {\it Give a technical description of your program, describing e.g., sample size and properties, justification of spectral or spatial resolution, wavelength, target density, etc.}
 
 
 %NOAO guidelines:
@@ -70,10 +118,111 @@ Give a technical description of your program, describing e.g., sample size and p
 %your scientific goals (and why), and why are your
 %observations likely to be better than previous work in the field?
 
+To be useful as probes of cosmological distances, galaxy scale lenses
+need very well constrained mass models. These constraints will come from
+two types of targeted follow-up observations:\footnote{
+We note that these observations would be taken after targeted optical
+spectroscopy to get the redshifts of the deflector and source galaxies.
+This can be done at relatively low resolution, but the wider the
+wavelength range the better: we will need 3500--10000 Angstroms in the
+optical, and maybe a triplespec-like instrument covering the JHK bands
+in the IR. Some redshifts may come from overlapping spectroscopic survey
+observations, with the systems appearing as composite absorption and
+emission line galaxy spectral components. Some of the targeted
+spectroscopy could be done at 10-m class facilities.}
+\begin{enumerate}
+    \item {\bf High Resolution Einstein Rings Imaging} due to the
+    source AGN or SN host galaxy. Image quality of $\sim0.1$" or better
+    provides the Einstein ring constraints on the lens mass model
+    density profile slope (via the arc thickness) that are
+    needed to turn each of these systems into a  5\% precision distance
+    (Meng et al 2015).
+    \item {\bf Spatially-Resolved Spectroscopy of the Lens Galaxy,} enabling
+    measurement of the stellar velocity dispersion field to break the
+    degeneracy between the predicted time delays and the lens mass
+    density profile, calibrating each system to enable it to provide a
+    4\% accurate distance.
+\end{enumerate}
 
+We now assess the technical  requirements of each of these observations.
+
+{\bf 1. High Resolution Einstein Ring Imaging}:
+
+$\bullet$ Spectral coverage and resolution: imaging in two or three bands is
+recommended, to enable clean lens galaxy subtraction.
+
+$\bullet$ Angular resolution: the higher the resolution the better, but
+at least $0.1$~arcsec FWMH.
+
+$\bullet$ Field of view: at least 4~arcsec, to capture the Einstein
+ring without dithering.
+
+
+{\bf 2. Spatially-resolved Spectroscopy of the Lens Galaxy}:
+
+$\bullet$ Spectral coverage and resolution: $R\approx4000-5000$  over a
+wavelength range of 1.0--2.2 microns (to cover CaT at rest frame
+$8800-9000\AA$, or CO at $1.5-1.6\mu$m).
+
+$\bullet$ Angular resolution: 0.1--0.2~arcsec, to resolve the lens galaxy well.
+
+$\bullet$ Field of view: at least 4~arcsec, to capture the lens galaxy
+within the Einstein ring without dithering.
+
+
+% ----------------------------------------------------------------------
 
 \subsection{Needed Capabilities and Estimate of Demand}
 
-Describe the needed capabilities and demand (e.g., estimate of observing time) that flow down from the science and technical considerations. If applicable, describe the time critical nature of the required capabilities (do you need to have the capabilities while LSST is carrying out the survey or can you do the follow up later?) 
+% {\it Describe the needed capabilities and demand (e.g., estimate of observing time) that flow down from the science and technical considerations. If applicable, describe the time critical nature of the required capabilities (do you need to have the capabilities while LSST is carrying out the survey or can you do the follow up later?)}
+
+AO-assisted imaging and integral field spectroscopy on GSMTs would be
+best for providing the lens mass model constraints detailed in the
+previous section.  We will need capabilities such as those currently
+available on Keck, and that will be available on all three of GMT, TMT
+and E-ELT (albeit with somewhat different technical specifications).
+OSIRIS on Keck is the current best option, even though the field of view
+is a bit too small and the current AO system at Keck has relatively low
+strehl at 1$\mu$m. The Keck system will be upgraded, but TMT should be
+much better: IRIS on TMT would provide the capability we need. Similar
+data would be needed for the compound lenses.
+
+The light curves will be accumulated by LSST over the lifetime of the
+survey, but we expect accurate cosmography to be possible after the
+first 5 years.  Prior to this, the same facilities could be used to good
+effect improving the models of lenses found in shallower precursor
+surveys such as DES, KIDS and HSC. We expect to have good time delays
+for about 30-40 systems before the LSST survey begins: these would be
+the targets for high resolution follow-up before 2024, with an
+additional 60-70 targets coming from the LSST survey being pursued
+between 2024 and 2028 and beyond. The demand is therefore likely to be
+around 10-20 systems per year; we assume the higher value below, to help
+with planning.
+
+While the targeted observations outlined below would be narrow field,
+they would enable a considerable amount of ancillary science, notably in
+the areas of dark matter substructure (from perturbations to the imaged
+rings) and AGN host galaxy structure.
 
 
+{\bf 1. High Resolution Einstein Ring Imaging}:
+
+$\bullet$ Proposed facilities: GSMTs, JWST. 10m-class telescopes for
+brighter rings.
+
+$\bullet$ Observations needed: Targeted snapshot (e.g.\ 200--2000
+second exposure time with TMT) imaging in the optical and near infra-red.
+
+$\bullet$ Total time required: $\sim30$~hours, depending
+on balance between facilities (assuming 20~mins per system, on average),
+or $\sim 6$ hours per year.
+
+{\bf 2. Spatially-resolved Spectroscopy of the Lens Galaxy}:
+
+$\bullet$ Proposed facilities: GSMTs, JWST.
+
+$\bullet$ Observations needed: IFU spectra in the near infra-red.
+
+$\bullet$ Total time required: $\sim100$~hours, depending
+on balance between facilities (assuming 60~mins per system, on average),
+or $\sim 20$ hours per year.
