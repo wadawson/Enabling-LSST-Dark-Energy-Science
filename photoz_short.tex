@@ -165,15 +165,15 @@ The same instrumentation needed for a photometric redshift training survey could
 
 {\bf Intrinsic Alignment Studies:} Some of the strongest LSST constraints on dark energy are expected to come from measurements of the apparent shearing of galaxy images by weak gravitational lensing.  LSST weak lensing measurements are likely to be limited by our ability to characterize and mitigate systematic effects (including photo-z calibration errors). Multi-object spectroscopy can be used to help mitigate the effects of one of the most important: intrinsic alignments (IA) of galaxy shapes with the cosmic web act can as a contaminant to weak lensing measurements.
 
-Several
-methods have been developed for mitigating this systematic, including nulling, forward modeling, and self-calibration.
-These methods all have limitations, making it important also to explore intrinsic alignment effects directly, which requires spectroscopic redshifts to determine
+%Several
+%methods have been developed for mitigating this systematic, including nulling, forward modeling, and self-calibration.
+Existing methods of mitigating this systematic all have limitations, making it important also to explore intrinsic alignment effects directly, which requires spectroscopic redshifts to determine
 which galaxies are in physical proximity to each other.
 %This direct exploration will provide
 %intrinsic alignments models as inputs to the mitigation methods that need models.  % JAN: I added that last sentence in response to a question from Joan Najita:
 %How critical is the spectroscopy? The first paragraph mentions several methods -- do they all need spectroscopy? If not, how much does the spectroscopy add to the science result? (Is it "nice to have" or "critical"?)
-In particular, we are lacking knowledge of how intrinsic alignments scale with
-galaxy type, luminosity, and redshift at $z> 0.5$.
+%In particular, we are lacking knowledge of how intrinsic alignments scale with
+%galaxy type, luminosity, and redshift at $z> 0.5$.
 %However, we need similar information both for
 %galaxies at higher redshifts and for blue galaxies in general in order to develop reasonable priors for carrying out the WL analysis with LSST. Generally, this
 %requires both good imaging and redshift information, in order to both localize the galaxy pairs in
@@ -182,27 +182,25 @@ galaxy type, luminosity, and redshift at $z> 0.5$.
 %Large sets of spectroscopic redshifts can provide strong external priors on
 %IA models.
 % using spectroscopic redshifts, because IA are degenerate with other systematics (photo-$z$ errors and certain shear systematics).
-In principle, a direct measurement of IA requires a spectroscopic or spectro-photometric dataset that covers substantial
-contiguous areas (so as to constrain alignments out to tens of Mpc) but also has a decent sampling rate
-of a {\em representative galaxy sample} within these fields.
-
-As an example of the required field sizes, 1 degree at $z=0.8$ corresponds to a distance of $\sim 35 h^{-1}$ Mpc comoving, which should be well-suited to
-constraining IA models on the $\lesssim 10 h^{-1}$Mpc scales where existing theoretical models are
-most uncertain.  The desirability of large field sizes is somewhat in tension with the approach of surveying many modest-size fields to mitigate sample/cosmic variance as employed in the ``training'' dataset described in
-Sec.~\ref{sec:design}), but larger-field spectrographs such as Subaru/PFS would provide the necessary areal coverage as part of any photo-z training survey.  If the photo-z training survey covers smaller fields, supplemental spectroscopy with the same sort of instrument required for training work could be necessary.
+%In principle, a
+A direct measurement of IA would require a spectroscopic or spectro-photometric dataset that covers substantial
+contiguous areas ($>\sim$ 1 deg) while sampling a
+{\em representative} galaxy sample of tens of thousands of galaxies at minimum.
+%As an example of the required field sizes, 1 degree at $z=0.8$ corresponds to a distance of $\sim 35 h^{-1}$ Mpc comoving, which should be well-suited to
+%constraining IA models on the $\lesssim 10 h^{-1}$Mpc scales where existing theoretical models are
+%most uncertain.  The desirability of large field sizes is somewhat in tension with the approach of surveying many modest-size fields to mitigate sample/cosmic variance as employed in the ``training'' dataset described in
+%Sec.~\ref{sec:design}), but l
+Larger-field spectrographs such as Subaru/PFS could provide the necessary areal coverage and sampling as part of a photo-z training survey.  If the photo-z training survey covers smaller fields, supplemental spectroscopy with the same sort of instrument required for training work could be necessary.
 %it is quite possible that a training set that is still well-suited for IA studies could be developed (we note, for instance, that if the Subaru/PFS spectrograph were used for the training samples, it would have a minimum field size well-suited for IA studies).
 
-Because high redshift precision is not needed, an alternative approach would be to supplement LSST photo-z's with many-band narrow-band imaging, low-resolution spectroscopy, or spectro-photometric redshifts; however, high signal-to-noise at faint magnitudes would be necessary, requiring new instrumentation on large telescopes.
+Because high redshift precision is not needed, an alternative approach would be to supplement LSST photo-z's with many-band narrow-band imaging or low-resolution spectroscopy; however, high signal-to-noise at faint magnitudes would be necessary, requiring new instrumentation on large telescopes.
 %
 %An alternative a
 %It is worth noting that, although the medium-resolution MOS spectroscopy envisioned for photo-$z$ training could serve the needs of IA characterization, the redshift RMS accuracy needed for this purpose is not particularly high.  Many-band narrow-band imaging, low-resolution spectroscopy, or spectro-photometric redshifts similar to those from the PRIMUS survey could deliver sufficiently low errors, presuming that highly-secure redshifts are obtained from them (the $\sim 5--10\%$ incorrect-z rates from PRIMUS would likely be problematic here). However, the galaxies for which redshifts to characterize IA for LSST are required are much fainter than those studied in previous low-resolution surveys; new instrumentation on larger telescopes would be needed to meet this goal.
 Another alternative would be to constrain IA using cross-correlations with spectroscopic galaxies instead of employing
-autocorrelation measurements (cf. Blazek et al. 2012 and Chisari et al. 2014).
-The dataset needed for this could well look like  the ``calibration'' dataset for enabling the
-photo-$z$ cross-correlation calibration method, as described in Sec.~\ref{sec:design}.
+autocorrelation measurements (cf. Blazek et al. 2012 and Chisari et al. 2014), which could utilize the same data needed for the photo-$z$ cross-correlation calibration method.
 %More exploration is needed to determine precise survey design requirements for this supporting science case, but we anticipate they will be
-reasonably close to what is in Sec.~\ref{sec:design}.
-Having both photo-$z$ training and calibration sets available, and making sure they are well-optimized for IA purposes, will provide us with multiple potential routes to an answer, maximizing the chances that success will be achieved.
+Having both photo-$z$ training and calibration sets available, and making sure they are well-optimized for IA purposes, will provide us with multiple potential routes to developing and testing IA models, maximizing the chances that success will be achieved.
 
 
 
@@ -219,59 +217,56 @@ The impact can be predicted given knowledge of galaxy redshift distributions, co
 
 
 {\bf Strong Lens Environment Characterization:}
-To achieve stage IV cosmographic accuracy with time delay lenses, the
+To achieve stage IV accuracy in constraining cosmology with time delay lenses (q.v. below), the
 mass in the immediate environment of the lens and along the line of
 sight must be carefully accounted for. LSST will provide photometric
-redshifts and stellar masses of all galaxies in the fields of each
-cosmographic lens.  We can remove the majority of the bias due to
-external convergence by forward modeling
-\cite{WongEtal2011,McCullyEtal2016}. However, for some lens fields,
+redshifts and stellar mass estimates for all galaxies in the fields of each
+cosmographic lens.  
+%We can remove the majority of the bias due to
+%external convergence by forward modeling
+%\cite{WongEtal2011,McCullyEtal2016}. 
+However, for some lens fields,
 photometric information may not be enough; multi-object spectroscopic
 data can provide significant improvements in the accuracy of the models.
 
-The $\sim 30$ most important galaxies need to be modeled in full, making
-them prime targets for spectroscopy, while the rest of the galaxies can
-be approximated as with only shear and convergence, and likely only
-require photometric data \cite{McCullyEtal2016}. Such models give an
-uncertainty of a few percent on the external convergence for an
-individual lens. Spectroscopy can also provide the velocity
-dispersion of both the lens galaxies and galaxies in the lens
-environment or along the line of sight. The velocity dispersion of the
-main lens galaxy allows us to break the lens radial profile degeneracy,
-one of the key systematic uncertainties for measuring cosmology using
-time delay cosmography; measuring this in the parent population (and not
-just the subset selected for targeted high resolution follow-up) will
-enlarge the sample of cosmologically-informative systems. The velocity
-dispersion of the environment/line of sight galaxies will allow more
-effective forward modeling, further reducing the residual bias in
+To predict the external convergence for an individual lens to few-percent uncertainty, the $\sim 30$ most important galaxies need to be modeled in full, making
+them prime targets for spectroscopy \cite{McCullyEtal2016}.  Velocity
+dispersion measurements for the lens galaxies allow us to break the lens radial profile degeneracy, a 
+key source of systematic uncertainty, while determining the velocity
+dispersions of other foreground galaxies will allow more
+effective forward modeling, reducing the residual bias in
 external convergence estimates by a factor of two
-\cite{CollettEtal2013}.
+\cite{CollettEtal2013}.  
 
-Characterization of weak lensing effects for strong lensing has similar
-needs to that needed to model intrinsic alignments, and can find strong
-synergy with photo-z calibration surveys. By selecting only the most
-important galaxies for spectroscopy, each lens field should only need a
-single pointing from a Multi-object spectrograph, e.g. DESI, though
-fiber collisions may necessitate multiple pointings. The technical
-requirements, and observing costs, of the strong lensing program are
+
+The technical requirements for this strong lensing program are
 summarized below, and can be seen to be less stringent than those listed
 in Section~\ref{sec:photoz_design}, suggesting the possibility of a
-profitable piggy back program.
+profitable piggy back program.  
 
-$\bullet$ Spectral coverage: as broad as possible, preferably $u$
+$\bullet$ Spectral coverage: as broad as possible, preferably from the $u$ band
 through $K$.
-
 $\bullet$ Spectral resolution: can be low, $R$ of a few hundred to a few
-thousand.
-
+thousand (with $R>2000$ necessary for velocity dispersion measurements).
 $\bullet$ Field of view: at least 5~arcmin, preferably more.
-
 $\bullet$ Number of fields: At least 100, with $\sim10-100$ targets per field.
 
-There are significant gains to be made by combining these observations
-with other redshift surveys, such as those for photometric redshift
-training or calibration (Chapter~\ref{chp:photoz}). However, timing is
-an issue:  the first LSST lenses will not be available until 2024. The
-30 or so systems studied in the Stage III time delay cosmography program
-will make better targets for  multi-object spectroscopic surveys carried
-out prior to LSST DR1.
+Because the relevant galaxies are relatively tightly packed on the sky and multiplex requirements are not high, existing or planned slit spectrographs such as Keck/LRIS, Keck/DEIMOS, Gemini/GMOS, and TMT/WFOS could be suitable for this work.  Observational costs would be reduced by embedding strong lensing observations in photometric redshift training and/or galaxy evolution surveys.  However, because of the association of strong lensing with massive galaxies in a limited redshift range, requiring the presence of strong lens systems would bias redshift distributions and cause surveys not to be a fair sampling of sample/cosmic variance, and thus may not be practical.
+
+Additional spectroscopy can be useful for characterizing the general effects of weak lensing on  strong lensing measurements; this has similar
+requirements as modeling intrinsic alignments, and can find strong
+synergy with photo-z training surveys.
+% Question from JAN: is this supposed to be in the same fields as the strong lens systems, or can it be done anywhere?  Only in the latter case can it have synergies with training surveys.
+
+%
+%There are significant gains to be made by combining these observations
+%with other redshift surveys, such as those for photometric redshift
+%training or calibration (Chapter~\ref{chp:photoz}). However, timing is
+%an issue:  the first LSST lenses will not be available until 2024. The
+%30 or so systems studied in the Stage III time delay cosmography program
+%will make better targets for  multi-object spectroscopic surveys carried
+%out prior to LSST DR1.
+% COMMENT FROM JAN: Timing is not something I'm worried about -- most photo-z training spectroscopy will extend past 2024, I'd bet -- but rather the fact that we need fair samples of the universe for photo-z work, which requiring presence of lens systems would prevent.
+
+
+
