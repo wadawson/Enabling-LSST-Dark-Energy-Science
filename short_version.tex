@@ -50,6 +50,8 @@
 \usepackage{colortbl}
 % Big tables summarizing plans:
 \usepackage{pdflscape}
+\usepackage{aas_macros}
+
 \usepackage{afterpage}
 
 \usepackage{pdftexcmds}
@@ -111,7 +113,7 @@
 \fancyfoot{}% clear all footer fields
 \fancyfoot[R]{\thepage}  % page number in "outer" position of footer line
 
-\fancyhead[L]{ \rm Cosmology Beyond Dark Matter}
+\fancyhead[L]{ \rm Facilitating Cosmology Measurements from LSST}
 \fancyhead[R]{}
 \renewcommand{\footrulewidth}{1pt}
 
@@ -119,6 +121,10 @@
 %		quantifying the capabilities needed. Similar to a rough draft of an NOAO observing proposal.
 %		It has the same elements of compelling science, technical description and quantitative
 %		statement of resource needs. But does not have to be very polished.}
+
+\begin{centering}
+{\huge{\bf{{Facilitating Cosmology Measurements from LSST}}}}
+\end{centering}
 
 {\bf{\it Executive Summary:}}
 
@@ -155,6 +161,10 @@ The constraining power of almost all LSST probes of cosmology (as well as other 
 
 \input{sl_short}
 
+\section{Science Case 3: Wide Field and Single-Object Spectroscopy for Supernova Cosmology}
+
+\input{sn_short}
+
 %D) LSS: BAO (including cross-correlation enhancements), redshift-space distortions on cluster or large scales, QSO absorber power spectra \& BAO
 % EG, EJ, WD, JN
 
@@ -173,8 +183,8 @@ The constraining power of almost all LSST probes of cosmology (as well as other 
 %\section{Dark matter in galaxy clusters}
 
 %\input{dm_short}
-
+%\bibliographystyle{fapj}
 \bibliography{dark_energy}{}
-\bibliographystyle{plain}
+\bibliographystyle{apj}
 
 \end{document}
