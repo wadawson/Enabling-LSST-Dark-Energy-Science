@@ -77,17 +77,30 @@ Different datasets will be needed for each of these purposes.  However, as will 
 
 %\subsection{\Training}
 
-{\bf Training:} Photo-$z$ methods generally use samples of objects with known z to develop or refine algorithms, and hence to reduce the random errors on individual photometric redshift estimates. This will result in smaller random errors on cosmological parameters of interest and enable analyses in narrower redshift bins.  The larger and more complete the training set is, the smaller the RMS error in photo-$z$ estimates will be, increasing LSST's constraining power.
+{\bf Training:} Photo-$z$ methods generally use samples of objects with known $z$ to develop or
+refine algorithms, and hence to reduce the random errors on individual photometric redshift
+estimates. This will result in smaller random errors on cosmological parameters of interest and
+enable analyses in narrower redshift bins.  Larger and more complete training sets result in smaller
+RMS errors in photo-$z$ estimates, increasing LSST's constraining power.
 % For instance, LSST delivers photo-$z$'s with an RMS error of $\sigma_z \sim 0.025(1+z)$ for $i<25.3$ galaxies in simulations with perfect template knowledge and realistic photometric errors, whereas photo-$z$'s in actual samples of similar S/N have delivered $\sigma_z \sim 0.05(1+z)$.
 With a perfect training set of galaxy redshifts down to LSST magnitude limits, we could achieve the system-limited performance; this would improve the Dark Energy Task Force figure of merit from LSST lensing+BAO studies by $\sim25$\%, with greater impact in other areas (e.g., studies of galaxy clusters).  {\bf Better photometric redshift training will improve almost all LSST extragalactic science, and hence addresses a wide variety of decadal science goals.}  To enable this, we need secure spectroscopic redshifts for as wide a range of galaxies as possible down to the $i=25.3$ magnitude limit of the LSST weak lensing ``gold sample'').
 
 %\subsection{Calibration}
 
-{\bf Calibration:} Similarly, secure spectroscopic redshifts are needed for {calibration}; e.g., the determination of both any overall bias in photo-$z$'s  as well as their true scatter.  {\bf Inadequate calibration will lead to systematic errors in the use of photo-$z$'s, affecting almost all extragalactic science with LSST and hence many decadal science priorities}.
+{\bf Calibration:} Similarly, secure spectroscopic redshifts are needed for {\em calibration}, i.e., the
+empirical determination of photo-$z$ bias and scatter.  {\bf Inadequate calibration will lead to
+  systematic errors in almost all extragalactic science cases with LSST and hence many decadal science priorities}.
 % It is estimated that the true mean redshift for each sample used for LSST cosmology (e.g., objects selected to be within some bin in photometric redshift) must be known to $\sim 2\times10^{-3}(1+z)$, i.e., 0.2\%.
-If extremely high completeness (>99.9\%) is attained in the spectroscopic samples used for training, then LSST calibration requirements would be met directly. However, existing deep redshift samples have failed to obtain secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future small-area, deep redshift samples will not solve the calibration problem.
+Extremely high completeness (>99.9\%) in the spectroscopic samples used for training would enable
+LSST calibration requirements to be met directly. However, existing deep redshift samples lack secure redshifts for a systematic 20\%-60\% of their targets; it is therefore quite likely that future deep redshift samples will not solve the calibration problem.
 
-Instead, we can utilize cross-correlation methods to calibrate photo-$z$'s.  These techniques correlate the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift distribution we aim to characterize.  We can then exploit the fact that bright galaxies trace the same underlying dark matter distribution as fainter objects, enabling the determination of the $z$ distribution for purely photometric samples with high accuracy.  The key data needed for photo-$z$ calibration via cross-correlations are redshift samples with very large numbers of objects over a wide area of sky, spanning the full redshift range of LSST targets of interest.
+Instead, we can use cross-correlation methods to calibrate photo-$z$'s.  These techniques correlate
+the positions on the sky of objects with known $z$ with the positions of the galaxies whose redshift
+distribution we aim to characterize.  We can then exploit the fact that bright galaxies trace the
+same underlying dark matter distribution as fainter objects, enabling the determination of the $z$
+distribution for purely photometric samples with high accuracy.  Photo-$z$ calibration via
+cross-correlations requires redshifts for very large numbers of objects over a wide area of sky,
+spanning the full redshift range of LSST targets of interest.
 
 
 
