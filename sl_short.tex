@@ -74,7 +74,9 @@ galaxy-scale lensed quasars and supernovae. Galaxy scale compound lenses
 (i.e. systems with two sources at different redshifts) have also been
 suggested. We expect to be able to compile samples of several hundred lensed AGN
 and lensed SN systems with accurately measured LSST time delays \citep{LiaoEtal2015},
-and dozens of compound lens systems \citep{Collett2015}.
+and dozens of compound lens systems \citep{Collett2015}.\footnote{The
+LSST strong lens sample will be compiled semi-automatically, using algorithms developed and implemented by the LSST DESC that are
+run on the DM Level 1 and 2 data products, and whose products are then assessed -- including visually -- by the DESC analysis team. Some of the technology involved in this process could be developed and operated in collaboration with the Galaxies and Strong Lenses collaborations.}
 
 Figure~\ref{fig:sl_forecast}, reproduced from \citet{Coe+Moustakas2009}
 shows approximate forecast cosmological  parameter constraints from a
@@ -94,7 +96,7 @@ measured time delays.
     \centering\includegraphics[width=0.9\linewidth]{figs/Coe+Moustakas2009_Figure14.pdf}
     \caption{LSST time delay lens cosmological parameter forecasts (`TD', blue ellipses)
     compared to forecasts from the Dark
-    Energy Task Force \citep{DETF} for four other Stage IV probes of cosmology: Baryon Acoustic Oscillations (`BAO'); Weak Lensing (`WL'); Type Ia Supernovae (`SN'); and Cluster counts (`CL').  The parameters considered are the Dark Energy equation of state parameter $w=P/\rho$ evaluated today ($w_0$); its evolution with the scale factor of the Universe in a linear model, i.e. the parameter $w_a$ for the model $w(a) = w_0 + w_a\times(1-a)$; and the curvature of the Universe expressed as a fraction of its critical density, $\Omega_k$.   The prior probability distribution assumed for cosmological parameters is shown in grey.  
+    Energy Task Force \citep{DETF} for four other Stage IV probes of cosmology: Baryon Acoustic Oscillations (`BAO'); Weak Lensing (`WL'); Type Ia Supernovae (`SN'); and Cluster counts (`CL').  The parameters considered are the Dark Energy equation of state parameter $w=P/\rho$ evaluated today ($w_0$); its evolution with the scale factor of the Universe in a linear model, i.e. the parameter $w_a$ for the model $w(a) = w_0 + w_a\times(1-a)$; and the curvature of the Universe expressed as a fraction of its critical density, $\Omega_k$.   The prior probability distribution assumed for cosmological parameters is shown in grey.
     A sample of 100 lenses is assumed, each one
     providing a 5\% accurate time delay distance. Figure reproduced from
     \citet{Coe+Moustakas2009}.}
@@ -148,11 +150,17 @@ We now assess the technical  requirements of each of these observations.
 
 {\bf 1. High Resolution Einstein Ring Imaging}:
 
-$\bullet$ Spectral coverage and resolution: imaging in two or three bands is
-recommended, to enable clean lens galaxy subtraction.
+$\bullet$ Spectral coverage and resolution: imaging in two or three
+bands is recommended, to enable clean lens galaxy subtraction.
 
 $\bullet$ Angular resolution: the higher the resolution the better, but
 at least $0.1$~arcsec FWMH.
+
+$\bullet$ Depth: the host galaxies of the lensed sources are faint (mag
+23--25). Brighter sources will be prioritized when compiling the
+follow-up sample, based on analysis of the survey images, and exposure
+times of up to 1 hour would be considered, with fainter systems being
+discarded \citep{MengEtal2015}.
 
 $\bullet$ Field of view: at least 4~arcsec, to capture the Einstein
 ring without dithering.
@@ -166,9 +174,16 @@ $\sim8500-8700\AA$, or CO at $1.5-1.6\mu$m).
 
 $\bullet$ Angular resolution: 0.1--0.2~arcsec, to resolve the lens galaxy well.
 
+$\bullet$ Depth: the lens galaxies will have brightness in the range
+19--22 magnitudes. Again, exposure times of an hour or less will be
+considered, with fainter systems being discarded.
+
 $\bullet$ Field of view: at least 4~arcsec, to capture the lens galaxy
 within the Einstein ring without dithering.
 
+The above requirements are derived from end-to-end simulations of the
+kind carried out by \citet{MengEtal2015}, which will be refined before
+proposals to next generation facilities are submitted.
 
 % ----------------------------------------------------------------------
 
